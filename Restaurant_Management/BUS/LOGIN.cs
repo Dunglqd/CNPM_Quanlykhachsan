@@ -9,11 +9,11 @@ namespace Restaurant_Management.BUS
 {
     internal class LOGIN
     {
-        private DAO.USER userDAO;
+        private DAO.HETHONG userDAO;
 
         public LOGIN()
         {
-            userDAO = new DAO.USER();
+            userDAO = new DAO.HETHONG();
         }
 
         public DataTable getUser(string USERNAME, string PASSWORD)

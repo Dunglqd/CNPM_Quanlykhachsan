@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management
 {
-    partial class BOOKROOM
+    partial class BOOK_ROOM
     {
         /// <summary>
         /// Required designer variable.
@@ -47,16 +47,16 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.dtvRoom = new System.Windows.Forms.DataGridView();
+            this.dtvPH = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtvNH = new System.Windows.Forms.DataGridView();
             this.btnBangDatPhong = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvPH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvNH)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -302,29 +302,30 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(197, 42);
             this.button15.TabIndex = 26;
-            this.button15.Text = "Danh sách Khách hàng";
+            this.button15.Text = "Danh sách Nhóm";
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // dtvRoom
+            // dtvPH
             // 
-            this.dtvRoom.AllowUserToAddRows = false;
-            this.dtvRoom.AllowUserToDeleteRows = false;
-            this.dtvRoom.AllowUserToOrderColumns = true;
-            this.dtvRoom.AllowUserToResizeColumns = false;
-            this.dtvRoom.AllowUserToResizeRows = false;
-            this.dtvRoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtvPH.AllowUserToAddRows = false;
+            this.dtvPH.AllowUserToDeleteRows = false;
+            this.dtvPH.AllowUserToResizeColumns = false;
+            this.dtvPH.AllowUserToResizeRows = false;
+            this.dtvPH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtvRoom.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dtvRoom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dtvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvRoom.Location = new System.Drawing.Point(25, 509);
-            this.dtvRoom.Name = "dtvRoom";
-            this.dtvRoom.ReadOnly = true;
-            this.dtvRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtvRoom.Size = new System.Drawing.Size(281, 129);
-            this.dtvRoom.TabIndex = 27;
+            this.dtvPH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvPH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.dtvPH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtvPH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvPH.Location = new System.Drawing.Point(25, 509);
+            this.dtvPH.MultiSelect = false;
+            this.dtvPH.Name = "dtvPH";
+            this.dtvPH.ReadOnly = true;
+            this.dtvPH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvPH.Size = new System.Drawing.Size(281, 129);
+            this.dtvPH.TabIndex = 27;
+            this.dtvPH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvRoom_CellClick);
             // 
             // dataGridView1
             // 
@@ -346,26 +347,27 @@
             this.dataGridView1.Size = new System.Drawing.Size(301, 129);
             this.dataGridView1.TabIndex = 28;
             // 
-            // dataGridView2
+            // dtvNH
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtvNH.AllowUserToAddRows = false;
+            this.dtvNH.AllowUserToDeleteRows = false;
+            this.dtvNH.AllowUserToResizeColumns = false;
+            this.dtvNH.AllowUserToResizeRows = false;
+            this.dtvNH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(355, 145);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(357, 278);
-            this.dataGridView2.TabIndex = 29;
+            this.dtvNH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvNH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.dtvNH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtvNH.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtvNH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvNH.Location = new System.Drawing.Point(355, 145);
+            this.dtvNH.MultiSelect = false;
+            this.dtvNH.Name = "dtvNH";
+            this.dtvNH.ReadOnly = true;
+            this.dtvNH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvNH.Size = new System.Drawing.Size(357, 278);
+            this.dtvNH.TabIndex = 29;
+            this.dtvNH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvNH_CellClick);
             // 
             // btnBangDatPhong
             // 
@@ -382,16 +384,16 @@
             this.btnBangDatPhong.UseVisualStyleBackColor = false;
             this.btnBangDatPhong.Click += new System.EventHandler(this.btnBangDatPhong_Click);
             // 
-            // BOOKROOM
+            // BOOK_ROOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(740, 675);
             this.Controls.Add(this.btnBangDatPhong);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dtvNH);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dtvRoom);
+            this.Controls.Add(this.dtvPH);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.label29);
@@ -399,16 +401,17 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.panel8);
-            this.Name = "BOOKROOM";
+            this.Name = "BOOK_ROOM";
             this.Text = "BOOKROOM";
+            this.Shown += new System.EventHandler(this.BOOK_ROOM_Shown);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvPH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvNH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,9 +438,9 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.DataGridView dtvRoom;
+        private System.Windows.Forms.DataGridView dtvPH;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtvNH;
         private System.Windows.Forms.Button btnBangDatPhong;
     }
 }

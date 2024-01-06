@@ -12,8 +12,14 @@ namespace Restaurant_Management
 {
     public partial class Bang_Dat_Phong : Form
     {
-        public Bang_Dat_Phong()
+        private DataGridViewRow currentPH;
+        private DataGridViewRow currentNH;
+
+        public Bang_Dat_Phong(DataGridViewRow currentPH, DataGridViewRow currentNH)
         {
+            this.currentPH = currentPH;
+            this.currentNH = currentNH;
+
             InitializeComponent();
         }
 

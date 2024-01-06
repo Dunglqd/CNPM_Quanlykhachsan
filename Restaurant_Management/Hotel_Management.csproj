@@ -53,8 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BOOK_ROOM.cs" />
     <Compile Include="BUS\LOGIN.cs" />
-    <Compile Include="DAO\USER.cs" />
+    <Compile Include="DAO\HETHONG.cs" />
+    <Compile Include="DAO\KHACHHANG.cs" />
+    <Compile Include="DAO\NHOM.cs" />
+    <Compile Include="DAO\PHONG.cs" />
     <Compile Include="GUI\components\bookRoom\Bang_Dat_Phong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +229,7 @@
     <Compile Include="GUI\SEARCH.Designer.cs">
       <DependentUpon>SEARCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="SHARE\UTILS.cs" />
     <Compile Include="SQL\dbConnection.cs" />
     <EmbeddedResource Include="GUI\components\bookRoom\Bang_Dat_Phong.resx">
       <DependentUpon>Bang_Dat_Phong.cs</DependentUpon>

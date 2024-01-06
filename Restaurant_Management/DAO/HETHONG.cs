@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Restaurant_Management.DAO
 {
-    internal class USER
+    internal class HETHONG
     {
         private dbConnection conn;
 
-        public USER()
+        public HETHONG()
         {
             conn = new dbConnection();
         }

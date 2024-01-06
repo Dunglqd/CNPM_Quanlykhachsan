@@ -102,7 +102,7 @@ namespace Restaurant_Management
             ButtonColorReset(btnBookRoom);
 
             lblTabTitle.Text = "BookRoom";
-            openChildForm(new BOOKROOM());
+            openChildForm(new BOOK_ROOM());
 
             //this.pnlContent.Controls.Clear();
             //BOOKROOM FrmBOOKROOM_Vrb = new BOOKROOM() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
