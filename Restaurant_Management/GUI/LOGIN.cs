@@ -12,8 +12,12 @@ namespace Restaurant_Management
 {
     public partial class LOGIN : Form
     {
+
+        private BUS.LOGIN loginBUS;
+
         public LOGIN()
         {
+            loginBUS = new BUS.LOGIN();
             InitializeComponent();
         }
 
@@ -24,14 +28,22 @@ namespace Restaurant_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Username.Text == "Your_user_name" && PassWord.Text == "Your_Password")
+
+            string username, user_password;
+            username = Username.Text.ToString();
+            user_password = PassWord.Text.ToString();
+
+            DataTable dtUser = loginBUS.getUser(username, user_password);
+
+            if (dtUser.Rows.Count > 0)
             {
-                new MAIN().Show();
+                MAIN form = new MAIN(dtUser.Rows[0]["MA_QUYEN"].ToString().Trim());
+                form.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("The username or password you entered is incorrect, please try again");
+                MessageBox.Show("Invalid login details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Username.Clear();
                 PassWord.Clear();
                 Username.Focus();
@@ -47,6 +59,11 @@ namespace Restaurant_Management
         private void label4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Username_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

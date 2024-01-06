@@ -1,0 +1,108 @@
+use QLKS;
+GO
+
+INSERT INTO LOAI_QUYEN
+	(MA_QUYEN, TENQUYEN)
+VALUES
+	('Q1', 'ADMIN'),
+	('Q2', 'NHANVIEN');
+
+INSERT INTO LOAI_NV
+	(MALOAINV, TENLOAI)
+VALUES
+	('L1', N'QUẢN LÍ'),
+	('L2', N'TIẾP TÂN'),
+	('L3', N'ĐẦU BẾP');
+
+INSERT INTO NHANVIEN
+	(MANV, TENNV, MALOAINV)
+VALUES
+	('NV1', N'NGUYỄN VĂN A', 'L1'),
+	('NV2', N'NGUYỄN VĂN B', 'L2'),
+	('NV3', N'NGUYỄN VĂN C', 'L3');
+
+INSERT INTO HETHONG
+	(USERNAME, PASSWORD, MA_QUYEN, MANV)
+VALUES
+	('ADMIN', 'ADMIN', 'Q1', 'NV1'),
+	('NV1', 'NV', 'Q2', 'NV2'),
+	('NV2', 'NV', 'Q2', 'NV2');
+
+INSERT INTO LOAIPHONG
+	(MALOAI, TENLOAI, DONGIA)
+VALUES
+	('L1', N'PHÒNG ĐƠN', 150000),
+	('L2', N'PHÒNG ĐÔI', 170000),
+	('L3', N'PHÒNG VIP', 200000);
+
+INSERT INTO LOAI_TT
+	(MATT, TEN_TT)
+VALUES
+	('TT1', N'MỚI'),
+	('TT2', N'TRỐNG'),
+	('TT3', N'ĐANG SỬ DỤNG');
+
+INSERT INTO PHONG
+    (MAPHONG, MATT, MALOAI, GHICHU)
+VALUES
+    ('PH1', 'TT1', 'L1', ''),
+    ('PH2', 'TT1', 'L3', ''),
+    ('PH3', 'TT3', 'L2', ''),
+    ('PH4', 'TT2', 'L1', ''),
+    ('PH5', 'TT2', 'L1', ''),
+    ('PH6', 'TT3', 'L2', ''),
+    ('PH7', 'TT2', 'L3', ''),
+    ('PH8', 'TT3', 'L3', '');
+
+INSERT INTO NH_DK_PT
+    (MANH_DK_PT)
+VALUES
+    ('NH_DK1'),
+    ('NH_DK2'),
+    ('NH_DK3');
+
+INSERT INTO DK_PHUTHU
+    (MADK_PT, PHUTHU, SL, MANH_DK_PT)
+VALUES
+    ('PT1', 0.25, 3, 'NH_DK2'),
+    ('PT2', 0.5, 1, 'NH_DK3');
+
+INSERT INTO LOAI_KH
+    (MALOAI, TENLOAI, MANH_DK_PT)
+VALUES
+    ('L1', N'NỘI ĐỊA', 'NH_DK2'),
+    ('L2', N'QUỐC TẾ', 'NH_DK3');
+
+INSERT INTO NHOM
+    (MANHOM, TYLE)
+VALUES
+    ('NH1', 1),
+    ('NH2', 1.25),
+    ('NH3', 1.5),
+    ('NH4', 1.875);
+
+INSERT INTO KHACHHANG
+    (MAKH, TENKH, CMND, DIACHI, MALOAI, MANHOM)
+VALUES
+    ('KH1', N'NGUYỄN VĂN A', '012345678910', 'TPHCM', 'L1', 'NH1'),
+    ('KH2', N'NGUYỄN VĂN B', '012345678911', 'TRUNG QUỐC', 'L2', 'NH3'),
+    ('KH3', N'NGUYỄN VĂN C', '012345678912', 'TPHCM', 'L1', 'NH4'),
+    ('KH4', N'NGUYỄN VĂN D', '012345678913', 'TPHCM', 'L1', 'NH4'),
+    ('KH5', N'NGUYỄN VĂN E', '012345678914', 'ĐÀI LOAN', 'L2', 'NH4'),
+    ('KH6', N'NGUYỄN VĂN F', '012345678915', 'TPHCM', 'L1', 'NH2'),
+    ('KH7', N'NGUYỄN VĂN G', '012345678916', 'TPHCM', 'L1', 'NH2'),
+    ('KH8', N'NGUYỄN VĂN H', '012345678917', 'TPHCM', 'L1', 'NH2');
+
+INSERT INTO PHIEUTHUEPHONG
+    (MAPT, MANHOM, MAPHONG, NGBD, MANV, MAKH)
+VALUES
+    ('PT1', 'NH2', 'PH6', '2021-01-01', 'NV1', 'KH6'),
+    ('PT2', 'NH3', 'PH3', '2021-02-01', 'NV2', 'KH2'),
+    ('PT3', 'NH4', 'PH8', '2021-03-01', 'NV2', 'KH3');
+
+INSERT INTO HOADON
+    (MAHD, MAPT, MANV, THANHTIEN, NGKT, SONGAY, MAKH)
+VALUES
+    ('HD1', 'PT1', 'NV2', 212500, '2021-02-01', 1, 'KH1'),
+    ('HD2', 'PT2', 'NV2', 510000, '2021-04-01', 2, 'KH2'),
+    ('HD3', 'PT3', 'NV2', 1125000, '2021-06-01', 3, 'KH3');

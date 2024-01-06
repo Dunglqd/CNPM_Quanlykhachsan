@@ -27,9 +27,11 @@ namespace Restaurant_Management
 
           );
         private Form activateForm = null;
+        private string MAQUYEN = "Q2";
 
-        public MAIN()
+        public MAIN(string MAQUYEN = "Q2")
         {
+            this.MAQUYEN = MAQUYEN;
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
             pnlNavIndicator.Height = btnDashboard.Height;
