@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management
 {
-    partial class Login
+    partial class LOGIN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOGIN));
             this.label4 = new System.Windows.Forms.Label();
             this.PassWord = new System.Windows.Forms.TextBox();
             this.Username = new System.Windows.Forms.TextBox();

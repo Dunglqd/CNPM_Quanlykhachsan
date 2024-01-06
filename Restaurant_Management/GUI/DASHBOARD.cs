@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management
 {
-    public partial class FormDashboard : Form
+    public partial class DASHBOARD : Form
     {
-        public FormDashboard()
+        public DASHBOARD()
         {
             InitializeComponent();
         }

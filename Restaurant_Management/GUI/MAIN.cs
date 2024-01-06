@@ -11,23 +11,24 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management
 {
-    public partial class Form1 : Form
+    public partial class MAIN : Form
     {
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
-     (
-          int nLeftRect,
-          int nTopRect,
-          int nRightRect,
-          int nBottomRect,
-          int nWidthEllipse,
-          int nHeightEllipse
+         (
+              int nLeftRect,
+              int nTopRect,
+              int nRightRect,
+              int nBottomRect,
+              int nWidthEllipse,
+              int nHeightEllipse
 
-      );
-        
-        public Form1()
+          );
+        private Form activateForm = null;
+
+        public MAIN()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
@@ -38,11 +39,28 @@ namespace Restaurant_Management
 
             lblTabTitle.Text = "Dashboard";
             this.pnlContent.Controls.Clear();
-            FormDashboard FrmDashboard_Vrb = new FormDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DASHBOARD FrmDashboard_Vrb = new DASHBOARD() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pnlContent.Controls.Add(FrmDashboard_Vrb);
             FrmDashboard_Vrb.Show();
-        }       
-        
+        }
+
+        private void openChildForm(Form childForm)
+        {
+            if (activateForm != null)
+            {
+                activateForm.Close();
+            }
+
+            activateForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(childForm);
+            pnlContent.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void ButtonColorReset(Button button)
         {
             Color activeColor = Color.FromArgb(31, 27, 48);
@@ -66,10 +84,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnDashboard);
 
             lblTabTitle.Text = "Dashboard";
-            this.pnlContent.Controls.Clear();
-            FormDashboard FrmDashboard_Vrb = new FormDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmDashboard_Vrb);
-            FrmDashboard_Vrb.Show();
+            openChildForm(new DASHBOARD());
+
+            //this.pnlContent.Controls.Clear();
+            //DASHBOARD FrmDashboard_Vrb = new DASHBOARD() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmDashboard_Vrb);
+            //FrmDashboard_Vrb.Show();
         }
 
         private void BtnBookRoom_Click(object sender, EventArgs e)
@@ -80,10 +100,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnBookRoom);
 
             lblTabTitle.Text = "BookRoom";
-            this.pnlContent.Controls.Clear();
-            BOOKROOM FrmBOOKROOM_Vrb = new BOOKROOM() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmBOOKROOM_Vrb);
-            FrmBOOKROOM_Vrb.Show();
+            openChildForm(new BOOKROOM());
+
+            //this.pnlContent.Controls.Clear();
+            //BOOKROOM FrmBOOKROOM_Vrb = new BOOKROOM() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmBOOKROOM_Vrb);
+            //FrmBOOKROOM_Vrb.Show();
         }
         private void BtnSearch_Click(object sender, EventArgs e)
         {
@@ -93,10 +115,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnSearch);
 
             lblTabTitle.Text = "Search";
-            this.pnlContent.Controls.Clear();
-            SEARCH FrmSEARCH_Vrb = new SEARCH() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmSEARCH_Vrb);
-            FrmSEARCH_Vrb.Show();
+            openChildForm(new SEARCH());
+
+            //this.pnlContent.Controls.Clear();
+            //SEARCH FrmSEARCH_Vrb = new SEARCH() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmSEARCH_Vrb);
+            //FrmSEARCH_Vrb.Show();
         }
 
         private void BtnExit_Click(object sender, EventArgs e)
@@ -112,10 +136,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnManage);
 
             lblTabTitle.Text = "Manage";
-            this.pnlContent.Controls.Clear();
-            MANAGE FrmMANAGE_Vrb = new MANAGE() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmMANAGE_Vrb);
-            FrmMANAGE_Vrb.Show();
+            openChildForm(new MANAGE());
+
+            //this.pnlContent.Controls.Clear();
+            //MANAGE FrmMANAGE_Vrb = new MANAGE() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmMANAGE_Vrb);
+            //FrmMANAGE_Vrb.Show();
         }
 
         private void btnPayment_Click(object sender, EventArgs e)
@@ -126,10 +152,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnPayment);
 
             lblTabTitle.Text = "Payment";
-            this.pnlContent.Controls.Clear();
-            HOADON FrmHOADON_Vrb = new HOADON() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmHOADON_Vrb);
-            FrmHOADON_Vrb.Show();
+            openChildForm(new HOADON());
+
+            //this.pnlContent.Controls.Clear();
+            //HOADON FrmHOADON_Vrb = new HOADON() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmHOADON_Vrb);
+            //FrmHOADON_Vrb.Show();
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -140,10 +168,12 @@ namespace Restaurant_Management
             ButtonColorReset(btnReport);
 
             lblTabTitle.Text = "Report";
-            this.pnlContent.Controls.Clear();
-            REPORT FrmREPORT_Vrb = new REPORT() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.pnlContent.Controls.Add(FrmREPORT_Vrb);
-            FrmREPORT_Vrb.Show();
+            openChildForm(new REPORT());
+
+            //this.pnlContent.Controls.Clear();
+            //REPORT FrmREPORT_Vrb = new REPORT() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            //this.pnlContent.Controls.Add(FrmREPORT_Vrb);
+            //FrmREPORT_Vrb.Show();
         }
     }
 }

@@ -53,10 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bang_Dat_Phong.cs">
+    <Compile Include="GUI\components\bookRoom\Bang_Dat_Phong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bang_Dat_Phong.Designer.cs">
+    <Compile Include="GUI\components\bookRoom\Bang_Dat_Phong.Designer.cs">
       <DependentUpon>Bang_Dat_Phong.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
@@ -65,23 +65,23 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOADON.cs">
+    <Compile Include="GUI\HOADON.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HOADON.Designer.cs">
+    <Compile Include="GUI\HOADON.Designer.cs">
       <DependentUpon>HOADON.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookRoom.cs">
+    <Compile Include="GUI\BOOK_ROOM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookRoom.Designer.cs">
-      <DependentUpon>BookRoom.cs</DependentUpon>
+    <Compile Include="GUI\BOOK_ROOM.Designer.cs">
+      <DependentUpon>BOOK_ROOM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="GUI\MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCustomers.cs">
       <SubType>Form</SubType>
@@ -89,11 +89,11 @@
     <Compile Include="FormCustomers.Designer.cs">
       <DependentUpon>FormCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDashboard.cs">
+    <Compile Include="GUI\DASHBOARD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <Compile Include="GUI\DASHBOARD.Designer.cs">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRestaurants.cs">
       <SubType>Form</SubType>
@@ -101,168 +101,168 @@
     <Compile Include="FormRestaurants.Designer.cs">
       <DependentUpon>FormRestaurants.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="GUI\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="GUI\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE - ROOM.cs">
+    <Compile Include="GUI\components\manage\MANAGE - ROOM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE - ROOM.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE - ROOM.Designer.cs">
       <DependentUpon>MANAGE - ROOM.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE-HOADON.cs">
+    <Compile Include="GUI\components\manage\MANAGE-HOADON.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE-HOADON.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE-HOADON.Designer.cs">
       <DependentUpon>MANAGE-HOADON.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE-NHANVIEN.cs">
+    <Compile Include="GUI\components\manage\MANAGE-NHANVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE-NHANVIEN.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE-NHANVIEN.Designer.cs">
       <DependentUpon>MANAGE-NHANVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE-PTP.cs">
+    <Compile Include="GUI\components\manage\MANAGE-PTP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE-PTP.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE-PTP.Designer.cs">
       <DependentUpon>MANAGE-PTP.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE-QUYEN.cs">
+    <Compile Include="GUI\components\manage\MANAGE-QUYEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE-QUYEN.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE-QUYEN.Designer.cs">
       <DependentUpon>MANAGE-QUYEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE.cs">
+    <Compile Include="GUI\MANAGE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE.Designer.cs">
+    <Compile Include="GUI\MANAGE.Designer.cs">
       <DependentUpon>MANAGE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PTP.cs">
+    <Compile Include="GUI\PTP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PTP.Designer.cs">
+    <Compile Include="GUI\PTP.Designer.cs">
       <DependentUpon>PTP.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE - DKPT.cs">
+    <Compile Include="GUI\components\manage\MANAGE - DKPT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE - DKPT.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE - DKPT.Designer.cs">
       <DependentUpon>MANAGE - DKPT.cs</DependentUpon>
     </Compile>
-    <Compile Include="MANAGE - KHACHHANG.cs">
+    <Compile Include="GUI\components\manage\MANAGE - KHACHHANG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MANAGE - KHACHHANG.Designer.cs">
+    <Compile Include="GUI\components\manage\MANAGE - KHACHHANG.Designer.cs">
       <DependentUpon>MANAGE - KHACHHANG.cs</DependentUpon>
     </Compile>
-    <Compile Include="REPORT - LOAIKH.cs">
+    <Compile Include="GUI\components\report\REPORT - LOAIKH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="REPORT - LOAIKH.Designer.cs">
+    <Compile Include="GUI\components\report\REPORT - LOAIKH.Designer.cs">
       <DependentUpon>REPORT - LOAIKH.cs</DependentUpon>
     </Compile>
-    <Compile Include="REPORT-LOAIPHONG.cs">
+    <Compile Include="GUI\components\report\REPORT-LOAIPHONG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="REPORT-LOAIPHONG.Designer.cs">
+    <Compile Include="GUI\components\report\REPORT-LOAIPHONG.Designer.cs">
       <DependentUpon>REPORT-LOAIPHONG.cs</DependentUpon>
     </Compile>
-    <Compile Include="REPORT.cs">
+    <Compile Include="GUI\REPORT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="REPORT.Designer.cs">
+    <Compile Include="GUI\REPORT.Designer.cs">
       <DependentUpon>REPORT.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH - ROOM.cs">
+    <Compile Include="GUI\components\search\SEARCH - ROOM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH - ROOM.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH - ROOM.Designer.cs">
       <DependentUpon>SEARCH - ROOM.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH-DKPT.cs">
+    <Compile Include="GUI\components\search\SEARCH-DKPT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH-DKPT.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH-DKPT.Designer.cs">
       <DependentUpon>SEARCH-DKPT.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH-HOADON.cs">
+    <Compile Include="GUI\components\search\SEARCH-HOADON.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH-HOADON.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH-HOADON.Designer.cs">
       <DependentUpon>SEARCH-HOADON.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH-KHACHHANG.cs">
+    <Compile Include="GUI\components\search\SEARCH-KHACHHANG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH-KHACHHANG.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH-KHACHHANG.Designer.cs">
       <DependentUpon>SEARCH-KHACHHANG.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH-NHANVIEN.cs">
+    <Compile Include="GUI\components\search\SEARCH-NHANVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH-NHANVIEN.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH-NHANVIEN.Designer.cs">
       <DependentUpon>SEARCH-NHANVIEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH-PTP.cs">
+    <Compile Include="GUI\components\search\SEARCH-PTP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH-PTP.Designer.cs">
+    <Compile Include="GUI\components\search\SEARCH-PTP.Designer.cs">
       <DependentUpon>SEARCH-PTP.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEARCH.cs">
+    <Compile Include="GUI\SEARCH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEARCH.Designer.cs">
+    <Compile Include="GUI\SEARCH.Designer.cs">
       <DependentUpon>SEARCH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Bang_Dat_Phong.resx">
+    <EmbeddedResource Include="GUI\components\bookRoom\Bang_Dat_Phong.resx">
       <DependentUpon>Bang_Dat_Phong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HOADON.resx">
+    <EmbeddedResource Include="GUI\HOADON.resx">
       <DependentUpon>HOADON.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookRoom.resx">
-      <DependentUpon>BookRoom.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BOOK_ROOM.resx">
+      <DependentUpon>BOOK_ROOM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomers.resx">
       <DependentUpon>FormCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRestaurants.resx">
       <DependentUpon>FormRestaurants.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE - ROOM.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE - ROOM.resx">
       <DependentUpon>MANAGE - ROOM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE-HOADON.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE-HOADON.resx">
       <DependentUpon>MANAGE-HOADON.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE-NHANVIEN.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE-NHANVIEN.resx">
       <DependentUpon>MANAGE-NHANVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE-PTP.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE-PTP.resx">
       <DependentUpon>MANAGE-PTP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE-QUYEN.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE-QUYEN.resx">
       <DependentUpon>MANAGE-QUYEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE.resx">
+    <EmbeddedResource Include="GUI\MANAGE.resx">
       <DependentUpon>MANAGE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -270,43 +270,43 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="PTP.resx">
+    <EmbeddedResource Include="GUI\PTP.resx">
       <DependentUpon>PTP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE - DKPT.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE - DKPT.resx">
       <DependentUpon>MANAGE - DKPT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MANAGE - KHACHHANG.resx">
+    <EmbeddedResource Include="GUI\components\manage\MANAGE - KHACHHANG.resx">
       <DependentUpon>MANAGE - KHACHHANG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="REPORT - LOAIKH.resx">
+    <EmbeddedResource Include="GUI\components\report\REPORT - LOAIKH.resx">
       <DependentUpon>REPORT - LOAIKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="REPORT-LOAIPHONG.resx">
+    <EmbeddedResource Include="GUI\components\report\REPORT-LOAIPHONG.resx">
       <DependentUpon>REPORT-LOAIPHONG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="REPORT.resx">
+    <EmbeddedResource Include="GUI\REPORT.resx">
       <DependentUpon>REPORT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH - ROOM.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH - ROOM.resx">
       <DependentUpon>SEARCH - ROOM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH-DKPT.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH-DKPT.resx">
       <DependentUpon>SEARCH-DKPT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH-HOADON.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH-HOADON.resx">
       <DependentUpon>SEARCH-HOADON.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH-KHACHHANG.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH-KHACHHANG.resx">
       <DependentUpon>SEARCH-KHACHHANG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH-NHANVIEN.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH-NHANVIEN.resx">
       <DependentUpon>SEARCH-NHANVIEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH-PTP.resx">
+    <EmbeddedResource Include="GUI\components\search\SEARCH-PTP.resx">
       <DependentUpon>SEARCH-PTP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEARCH.resx">
+    <EmbeddedResource Include="GUI\SEARCH.resx">
       <DependentUpon>SEARCH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -456,6 +456,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BUS\" />
+    <Folder Include="DAO\" />
+    <Folder Include="GUI\components\main\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

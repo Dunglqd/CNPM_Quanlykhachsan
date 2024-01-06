@@ -29,8 +29,11 @@ namespace Restaurant_Management
 
         private void btnBangDatPhong_Click(object sender, EventArgs e)
         {
-            Bang_Dat_Phong Bang_Dat_Phong = new Bang_Dat_Phong() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.Hide();
+            Bang_Dat_Phong Bang_Dat_Phong = new Bang_Dat_Phong();
+
+            Bang_Dat_Phong.StartPosition = FormStartPosition.CenterScreen;
+
+            Bang_Dat_Phong.BringToFront();
             Bang_Dat_Phong.Show();
         }
     }

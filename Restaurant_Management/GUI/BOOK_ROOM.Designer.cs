@@ -399,7 +399,6 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.panel8);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BOOKROOM";
             this.Text = "BOOKROOM";
             this.panel8.ResumeLayout(false);

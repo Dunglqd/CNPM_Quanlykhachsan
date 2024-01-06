@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management
 {
-    public partial class Login : Form
+    public partial class LOGIN : Form
     {
-        public Login()
+        public LOGIN()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace Restaurant_Management
         {
             if (Username.Text == "Your_user_name" && PassWord.Text == "Your_Password")
             {
-                new Form1().Show();
+                new MAIN().Show();
                 this.Hide();
             }
             else

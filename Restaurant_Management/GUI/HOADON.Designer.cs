@@ -304,7 +304,7 @@
             this.btnDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDP.ForeColor = System.Drawing.Color.RosyBrown;
-            this.btnDP.Location = new System.Drawing.Point(471, 34);
+            this.btnDP.Location = new System.Drawing.Point(477, 34);
             this.btnDP.Name = "btnDP";
             this.btnDP.Size = new System.Drawing.Size(229, 49);
             this.btnDP.TabIndex = 25;
@@ -335,7 +335,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(144, 34);
+            this.button3.Location = new System.Drawing.Point(150, 34);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(229, 49);
             this.button3.TabIndex = 28;
@@ -347,13 +347,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(728, 556);
+            this.ClientSize = new System.Drawing.Size(740, 675);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.btnDP);
             this.Controls.Add(this.panel15);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HOADON";
             this.Text = "HOADON";
             this.panel15.ResumeLayout(false);
