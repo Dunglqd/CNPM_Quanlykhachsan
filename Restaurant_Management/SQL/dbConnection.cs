@@ -79,5 +79,19 @@ namespace Restaurant_Management
                 return dt;
             }
         }
+
+        public SqlParameter[] createSqlParameters(string[] vars, SqlDbType[] dbTypes, Object[] objects)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[vars.Length];
+
+
+            for (int i = 0; i < vars.Length; i++)
+            {
+                sqlParameters[i] = new SqlParameter(vars[i], dbTypes[i]);
+                sqlParameters[i].Value = objects[i];
+            }
+
+            return sqlParameters;
+        }
     }
 }

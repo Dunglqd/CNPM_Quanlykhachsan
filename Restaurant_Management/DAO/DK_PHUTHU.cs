@@ -1,39 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Restaurant_Management.DAO
 {
-    internal class HETHONG
+    internal class DK_PHUTHU
     {
         private dbConnection conn;
 
-        public HETHONG()
+        public DK_PHUTHU()
         {
             conn = new dbConnection();
         }
 
-        public DataTable getUser(string USERNAME, string PASSWORD)
+        public DataTable getDK_PTByNhom(string MANHOM)
         {
             string sql =
                 "SELECT * " +
-                "FROM HETHONG " +
-                "WHERE USERNAME = @USERNAME " +
-                "AND [PASSWORD] LIKE @PASSWORD";
+                "FROM DK_PHUTHU " +
+                "WHERE MANH_DK_PT = @MANHOM";
 
             SqlParameter[] sqlParameters = conn.createSqlParameters(
-                new string[] { "@USERNAME", "@PASSWORD" },
-                new SqlDbType[] { SqlDbType.NChar, SqlDbType.NText },
-                new object[] { USERNAME, PASSWORD }
+                new string[] { "@MANHOM" },
+                new SqlDbType[] { SqlDbType.NChar },
+                new object[] { MANHOM }
             );
 
             return conn.excuteReader(sql, sqlParameters);
         }
     }
 }
-

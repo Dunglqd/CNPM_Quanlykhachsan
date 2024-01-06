@@ -55,8 +55,11 @@
   <ItemGroup>
     <Compile Include="BUS\BOOK_ROOM.cs" />
     <Compile Include="BUS\LOGIN.cs" />
+    <Compile Include="BUS\MANAGE-KHACHHANG.cs" />
+    <Compile Include="DAO\DK_PHUTHU.cs" />
     <Compile Include="DAO\HETHONG.cs" />
     <Compile Include="DAO\KHACHHANG.cs" />
+    <Compile Include="DAO\LOAIKH.cs" />
     <Compile Include="DAO\NHOM.cs" />
     <Compile Include="DAO\PHONG.cs" />
     <Compile Include="GUI\components\bookRoom\Bang_Dat_Phong.cs">

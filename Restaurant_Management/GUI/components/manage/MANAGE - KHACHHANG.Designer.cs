@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management
 {
-    partial class SEARCH___KHACHHANG
+    partial class MANAGE_KHACHHANG
     {
         /// <summary>
         /// Required designer variable.
@@ -31,20 +31,20 @@
             this.dtvNH_PT = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbPT = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbSL = new System.Windows.Forms.Label();
+            this.lbMAPT = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbTENLOAI = new System.Windows.Forms.Label();
+            this.lbMALOAI = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,15 +53,15 @@
             this.button15 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbDC = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbCMND = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lbTENKH = new System.Windows.Forms.Label();
+            this.lbMAKH = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.dtvNH_PT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvNH_PT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtvNH_PT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.dtvNH_PT.BackgroundColor = System.Drawing.Color.White;
             this.dtvNH_PT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtvNH_PT.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtvNH_PT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -98,17 +98,18 @@
             this.dtvNH_PT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtvNH_PT.Size = new System.Drawing.Size(360, 265);
             this.dtvNH_PT.TabIndex = 45;
+            this.dtvNH_PT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvNH_PT_CellClick);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
             this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lbPT);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.lbSL);
+            this.panel4.Controls.Add(this.lbMAPT);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.label6);
@@ -125,17 +126,17 @@
             this.panel7.Size = new System.Drawing.Size(200, 1);
             this.panel7.TabIndex = 14;
             // 
-            // label7
+            // lbPT
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label7.Location = new System.Drawing.Point(398, 173);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 17);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "05";
+            this.lbPT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbPT.AutoSize = true;
+            this.lbPT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbPT.Location = new System.Drawing.Point(398, 173);
+            this.lbPT.Name = "lbPT";
+            this.lbPT.Size = new System.Drawing.Size(22, 17);
+            this.lbPT.TabIndex = 12;
+            this.lbPT.Text = "05";
             // 
             // button5
             // 
@@ -166,29 +167,29 @@
             this.panel6.Size = new System.Drawing.Size(200, 1);
             this.panel6.TabIndex = 10;
             // 
-            // label4
+            // lbSL
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label4.Location = new System.Drawing.Point(398, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(22, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "05";
+            this.lbSL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbSL.AutoSize = true;
+            this.lbSL.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbSL.Location = new System.Drawing.Point(398, 125);
+            this.lbSL.Name = "lbSL";
+            this.lbSL.Size = new System.Drawing.Size(22, 17);
+            this.lbSL.TabIndex = 1;
+            this.lbSL.Text = "05";
             // 
-            // label5
+            // lbMAPT
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label5.Location = new System.Drawing.Point(398, 79);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "02";
+            this.lbMAPT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbMAPT.AutoSize = true;
+            this.lbMAPT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMAPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbMAPT.Location = new System.Drawing.Point(398, 79);
+            this.lbMAPT.Name = "lbMAPT";
+            this.lbMAPT.Size = new System.Drawing.Size(22, 17);
+            this.lbMAPT.TabIndex = 1;
+            this.lbMAPT.Text = "02";
             // 
             // button3
             // 
@@ -233,8 +234,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lbTENLOAI);
+            this.panel1.Controls.Add(this.lbMALOAI);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -259,29 +260,29 @@
             this.panel3.Size = new System.Drawing.Size(200, 1);
             this.panel3.TabIndex = 10;
             // 
-            // label1
+            // lbTENLOAI
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label1.Location = new System.Drawing.Point(398, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "05";
+            this.lbTENLOAI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTENLOAI.AutoSize = true;
+            this.lbTENLOAI.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTENLOAI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbTENLOAI.Location = new System.Drawing.Point(398, 125);
+            this.lbTENLOAI.Name = "lbTENLOAI";
+            this.lbTENLOAI.Size = new System.Drawing.Size(22, 17);
+            this.lbTENLOAI.TabIndex = 1;
+            this.lbTENLOAI.Text = "05";
             // 
-            // label2
+            // lbMALOAI
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label2.Location = new System.Drawing.Point(398, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "02";
+            this.lbMALOAI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbMALOAI.AutoSize = true;
+            this.lbMALOAI.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMALOAI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbMALOAI.Location = new System.Drawing.Point(398, 79);
+            this.lbMALOAI.Name = "lbMALOAI";
+            this.lbMALOAI.Size = new System.Drawing.Size(22, 17);
+            this.lbMALOAI.TabIndex = 1;
+            this.lbMALOAI.Text = "02";
             // 
             // button1
             // 
@@ -331,7 +332,7 @@
             this.dtvLKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvLKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtvLKH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.dtvLKH.BackgroundColor = System.Drawing.Color.White;
             this.dtvLKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtvLKH.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtvLKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -341,7 +342,7 @@
             this.dtvLKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtvLKH.Size = new System.Drawing.Size(360, 165);
             this.dtvLKH.TabIndex = 42;
-            this.dtvLKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtvLKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvLKH_CellClick);
             // 
             // dtvKH
             // 
@@ -353,16 +354,18 @@
             this.dtvKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtvKH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.dtvKH.BackgroundColor = System.Drawing.Color.White;
             this.dtvKH.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtvKH.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtvKH.Location = new System.Drawing.Point(506, 93);
+            this.dtvKH.MultiSelect = false;
             this.dtvKH.Name = "dtvKH";
             this.dtvKH.ReadOnly = true;
             this.dtvKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtvKH.Size = new System.Drawing.Size(360, 287);
             this.dtvKH.TabIndex = 41;
+            this.dtvKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvKH_CellClick);
             // 
             // button15
             // 
@@ -382,15 +385,15 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
             this.panel15.Controls.Add(this.panel11);
-            this.panel15.Controls.Add(this.label9);
+            this.panel15.Controls.Add(this.lbDC);
             this.panel15.Controls.Add(this.button7);
             this.panel15.Controls.Add(this.panel10);
-            this.panel15.Controls.Add(this.label8);
+            this.panel15.Controls.Add(this.lbCMND);
             this.panel15.Controls.Add(this.button6);
             this.panel15.Controls.Add(this.panel8);
             this.panel15.Controls.Add(this.panel9);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.label25);
+            this.panel15.Controls.Add(this.lbTENKH);
+            this.panel15.Controls.Add(this.lbMAKH);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
             this.panel15.Controls.Add(this.label24);
@@ -407,17 +410,17 @@
             this.panel11.Size = new System.Drawing.Size(300, 1);
             this.panel11.TabIndex = 17;
             // 
-            // label9
+            // lbDC
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label9.Location = new System.Drawing.Point(398, 223);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "05";
+            this.lbDC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbDC.AutoSize = true;
+            this.lbDC.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbDC.Location = new System.Drawing.Point(398, 223);
+            this.lbDC.Name = "lbDC";
+            this.lbDC.Size = new System.Drawing.Size(22, 17);
+            this.lbDC.TabIndex = 15;
+            this.lbDC.Text = "05";
             // 
             // button7
             // 
@@ -440,17 +443,17 @@
             this.panel10.Size = new System.Drawing.Size(200, 1);
             this.panel10.TabIndex = 14;
             // 
-            // label8
+            // lbCMND
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label8.Location = new System.Drawing.Point(398, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 17);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "02";
+            this.lbCMND.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbCMND.AutoSize = true;
+            this.lbCMND.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCMND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbCMND.Location = new System.Drawing.Point(398, 175);
+            this.lbCMND.Name = "lbCMND";
+            this.lbCMND.Size = new System.Drawing.Size(22, 17);
+            this.lbCMND.TabIndex = 12;
+            this.lbCMND.Text = "02";
             // 
             // button6
             // 
@@ -482,29 +485,29 @@
             this.panel9.Size = new System.Drawing.Size(200, 1);
             this.panel9.TabIndex = 10;
             // 
-            // label26
+            // lbTENKH
             // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label26.Location = new System.Drawing.Point(398, 125);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(22, 17);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "05";
+            this.lbTENKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTENKH.AutoSize = true;
+            this.lbTENKH.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTENKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbTENKH.Location = new System.Drawing.Point(398, 125);
+            this.lbTENKH.Name = "lbTENKH";
+            this.lbTENKH.Size = new System.Drawing.Size(22, 17);
+            this.lbTENKH.TabIndex = 1;
+            this.lbTENKH.Text = "05";
             // 
-            // label25
+            // lbMAKH
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label25.Location = new System.Drawing.Point(398, 79);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 17);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "02";
+            this.lbMAKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbMAKH.AutoSize = true;
+            this.lbMAKH.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMAKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbMAKH.Location = new System.Drawing.Point(398, 79);
+            this.lbMAKH.Name = "lbMAKH";
+            this.lbMAKH.Size = new System.Drawing.Size(22, 17);
+            this.lbMAKH.TabIndex = 1;
+            this.lbMAKH.Text = "02";
             // 
             // button12
             // 
@@ -610,7 +613,7 @@
             this.button8.Text = "TÌM KIẾM";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // SEARCH___KHACHHANG
+            // MANAGE_KHACHHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -629,8 +632,9 @@
             this.Controls.Add(this.button15);
             this.Controls.Add(this.panel15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SEARCH___KHACHHANG";
+            this.Name = "MANAGE_KHACHHANG";
             this.Text = "SEARCH___KHACHHANG";
+            this.Shown += new System.EventHandler(this.MANAGE_KHACHHANG_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dtvNH_PT)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -649,20 +653,20 @@
         private System.Windows.Forms.DataGridView dtvNH_PT;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbPT;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbSL;
+        private System.Windows.Forms.Label lbMAPT;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbTENLOAI;
+        private System.Windows.Forms.Label lbMALOAI;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
@@ -672,16 +676,16 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbTENKH;
+        private System.Windows.Forms.Label lbMAKH;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbDC;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbCMND;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnDeSelect;
         private System.Windows.Forms.Button button18;

@@ -15,22 +15,20 @@ namespace Restaurant_Management.SHARE
             if (isReturn) { return false; }
 
             if (currentRow != null)
-            {
+            { 
                 currentRow.Cells["Chọn"].Value = false;
 
                 if (currentRow == dtv.Rows[e.RowIndex])
                 {
                     currentRow = null;
-
+                    
                     return false;
                 }
             }
 
             dtv["Chọn", e.RowIndex].Value = true;
             currentRow = dtv.Rows[e.RowIndex];
-
-
-            Console.WriteLine("SELECRT");
+            
             return true;
         }
 
@@ -49,22 +47,33 @@ namespace Restaurant_Management.SHARE
             dt.Columns.Add(new DataColumn("Chọn", typeof(bool)));
         }
 
-        public static void showColumn(ref DataGridView dtv, string[] columns)
+        public static void showColumn(ref DataGridView dtv, string[] columns = null) 
         {
+            if (dtv.Columns.Contains("Chọn"))
+            {
+                dtv.Columns["Chọn"].Visible = true;
+            }
+
+            if (columns == null) { return; }
+
             foreach (DataGridViewColumn col in dtv.Columns)
-            {    
+            {
+                if (col.Name == "Chọn") continue;
+                
                 col.Visible = false;
             }
+
+            Console.WriteLine(columns);
 
             foreach (string col in columns)
             {
                 dtv.Columns[col].Visible = true;
             }
+        }
 
-            if (dtv.Columns.Contains("Chọn"))
-            {
-                dtv.Columns["Chọn"].Visible = true;
-            }
+        public static bool clickHeader(DataGridViewCellEventArgs e)
+        {
+            return e.RowIndex == -1;
         }
     }
 }

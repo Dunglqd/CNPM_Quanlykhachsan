@@ -10,8 +10,8 @@ namespace Restaurant_Management.BUS
 {
     internal class BOOK_ROOM
     {
-        DAO.PHONG phongDAO;
-        DAO.NHOM nhomDAO;
+        private DAO.PHONG phongDAO;
+        private DAO.NHOM nhomDAO;
 
         public BOOK_ROOM()
         {
@@ -34,5 +34,7 @@ namespace Restaurant_Management.BUS
 
             return dt;
         }
+
+        
     }
 }

@@ -16,7 +16,7 @@ namespace Restaurant_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BOOK_ROOM());
+            Application.Run(new MANAGE_KHACHHANG());
         }
     }
 }

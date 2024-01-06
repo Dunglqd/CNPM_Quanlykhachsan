@@ -63,21 +63,18 @@ namespace Restaurant_Management
             dtvPH.ClearSelection();
         }
 
-        private bool clickHeader(DataGridViewCellEventArgs e)
-        {
-            return e.RowIndex == -1;
-        }
+        
 
         private void dtvNH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (clickHeader(e)) return;
+            if (UTILS.clickHeader(e)) return;
 
             bool selected = UTILS.SelectRow(e, ref dtvNH, ref currentNH);
         }
 
         private void dtvRoom_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (clickHeader(e)) return;
+            if (UTILS.clickHeader(e)) return;
 
             string tinhTrang = dtvPH["TEN_TT", e.RowIndex].Value.ToString();
 

@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Restaurant_Management.SHARE;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -9,31 +9,29 @@ using System.Threading.Tasks;
 
 namespace Restaurant_Management.DAO
 {
-    internal class HETHONG
+    internal class LOAIKH
     {
         private dbConnection conn;
 
-        public HETHONG()
+        public LOAIKH()
         {
             conn = new dbConnection();
         }
 
-        public DataTable getUser(string USERNAME, string PASSWORD)
+        public DataTable getLoaiKHByMa(string MALOAI)
         {
             string sql =
                 "SELECT * " +
-                "FROM HETHONG " +
-                "WHERE USERNAME = @USERNAME " +
-                "AND [PASSWORD] LIKE @PASSWORD";
+                "FROM LOAI_KH " +
+                "WHERE MALOAI = @MALOAI";
 
             SqlParameter[] sqlParameters = conn.createSqlParameters(
-                new string[] { "@USERNAME", "@PASSWORD" },
-                new SqlDbType[] { SqlDbType.NChar, SqlDbType.NText },
-                new object[] { USERNAME, PASSWORD }
+                new string[]    { "@MALOAI" },
+                new SqlDbType[] { SqlDbType.NChar },
+                new object[]    { MALOAI }
             );
 
             return conn.excuteReader(sql, sqlParameters);
         }
     }
 }
-
