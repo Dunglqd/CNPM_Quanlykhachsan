@@ -27,7 +27,7 @@ namespace Restaurant_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MANAGE_NHANVIEN());
+            Application.Run(new MANAGE_ROOM());
         }
     }
 }

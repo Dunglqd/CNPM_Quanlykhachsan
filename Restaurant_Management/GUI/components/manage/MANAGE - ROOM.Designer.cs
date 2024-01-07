@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDeSelect = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnCLEAR = new System.Windows.Forms.Button();
+            this.btnDEL = new System.Windows.Forms.Button();
+            this.btnEDIT = new System.Windows.Forms.Button();
+            this.btnADD = new System.Windows.Forms.Button();
             this.dtvContent = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -41,59 +41,63 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnDeSelect
+            // btnCLEAR
             // 
-            this.btnDeSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeSelect.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeSelect.ForeColor = System.Drawing.Color.Gold;
-            this.btnDeSelect.Location = new System.Drawing.Point(217, 510);
-            this.btnDeSelect.Name = "btnDeSelect";
-            this.btnDeSelect.Size = new System.Drawing.Size(154, 42);
-            this.btnDeSelect.TabIndex = 67;
-            this.btnDeSelect.Text = "Bỏ chọn";
-            this.btnDeSelect.UseVisualStyleBackColor = true;
+            this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCLEAR.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLEAR.ForeColor = System.Drawing.Color.Gold;
+            this.btnCLEAR.Location = new System.Drawing.Point(217, 510);
+            this.btnCLEAR.Name = "btnCLEAR";
+            this.btnCLEAR.Size = new System.Drawing.Size(154, 42);
+            this.btnCLEAR.TabIndex = 67;
+            this.btnCLEAR.Text = "Bỏ chọn";
+            this.btnCLEAR.UseVisualStyleBackColor = true;
+            this.btnCLEAR.Click += new System.EventHandler(this.btnCLEAR_Click);
             // 
-            // button18
+            // btnDEL
             // 
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.Location = new System.Drawing.Point(12, 438);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(154, 42);
-            this.button18.TabIndex = 64;
-            this.button18.Text = "XÓA";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnDEL.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.btnDEL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDEL.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDEL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.btnDEL.Location = new System.Drawing.Point(12, 438);
+            this.btnDEL.Name = "btnDEL";
+            this.btnDEL.Size = new System.Drawing.Size(154, 42);
+            this.btnDEL.TabIndex = 64;
+            this.btnDEL.Text = "XÓA";
+            this.btnDEL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDEL.UseVisualStyleBackColor = false;
+            this.btnDEL.Click += new System.EventHandler(this.btnDEL_Click);
             // 
-            // button17
+            // btnEDIT
             // 
-            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.Location = new System.Drawing.Point(217, 438);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(154, 42);
-            this.button17.TabIndex = 65;
-            this.button17.Text = "SỬA";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnEDIT.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.btnEDIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEDIT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEDIT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.btnEDIT.Location = new System.Drawing.Point(217, 438);
+            this.btnEDIT.Name = "btnEDIT";
+            this.btnEDIT.Size = new System.Drawing.Size(154, 42);
+            this.btnEDIT.TabIndex = 65;
+            this.btnEDIT.Text = "SỬA";
+            this.btnEDIT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEDIT.UseVisualStyleBackColor = false;
+            this.btnEDIT.Click += new System.EventHandler(this.btnEDIT_Click);
             // 
-            // button16
+            // btnADD
             // 
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.Location = new System.Drawing.Point(12, 510);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(154, 42);
-            this.button16.TabIndex = 66;
-            this.button16.Text = "THÊM";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnADD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.btnADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnADD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnADD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.btnADD.Location = new System.Drawing.Point(12, 510);
+            this.btnADD.Name = "btnADD";
+            this.btnADD.Size = new System.Drawing.Size(154, 42);
+            this.btnADD.TabIndex = 66;
+            this.btnADD.Text = "THÊM";
+            this.btnADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnADD.UseVisualStyleBackColor = false;
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // dtvContent
             // 
@@ -104,7 +108,7 @@
             this.dtvContent.AllowUserToResizeRows = false;
             this.dtvContent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtvContent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvContent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dtvContent.BackgroundColor = System.Drawing.Color.White;
             this.dtvContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtvContent.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -143,6 +147,7 @@
             this.button15.Text = "BACK";
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // btnPH
             // 
@@ -192,10 +197,10 @@
             this.Controls.Add(this.btnTT);
             this.Controls.Add(this.btnLP);
             this.Controls.Add(this.btnPH);
-            this.Controls.Add(this.btnDeSelect);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnCLEAR);
+            this.Controls.Add(this.btnDEL);
+            this.Controls.Add(this.btnEDIT);
+            this.Controls.Add(this.btnADD);
             this.Controls.Add(this.dtvContent);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button15);
@@ -210,10 +215,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnDeSelect;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnCLEAR;
+        private System.Windows.Forms.Button btnDEL;
+        private System.Windows.Forms.Button btnEDIT;
+        private System.Windows.Forms.Button btnADD;
         private System.Windows.Forms.DataGridView dtvContent;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button15;

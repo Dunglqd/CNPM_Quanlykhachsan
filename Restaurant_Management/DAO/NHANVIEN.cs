@@ -37,14 +37,14 @@ namespace Restaurant_Management.DAO
         public DataTable searchNV(params SQL_PARAMS[] sqlParams)
         {
             string sql =
-               "SELECT *" +
-               "FROM NHANVIEN " +
-               "JOIN LOAI_NV " +
-               "ON NHANVIEN.MALOAINV = LOAI_NV.MALOAINV " +
-               "JOIN HETHONG " +
-               "ON NHANVIEN.MANV = HETHONG.MANV " +
-               "JOIN LOAI_QUYEN " +
-               "ON HETHONG.MA_QUYEN = LOAI_QUYEN.MA_QUYEN";
+                "SELECT * " +
+                "FROM NHANVIEN " +
+                "JOIN LOAI_NV " +
+                "ON NHANVIEN.MALOAINV = LOAI_NV.MALOAINV " +
+                "JOIN HETHONG " +
+                "ON NHANVIEN.MANV = HETHONG.MANV " +
+                "JOIN LOAI_QUYEN " +
+                "ON HETHONG.MA_QUYEN = LOAI_QUYEN.MA_QUYEN";
 
             return conn.excuteReaderWhere(
                 sql,

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management.models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -20,9 +21,23 @@ namespace Restaurant_Management.DAO
         {
             string sql =
                 "SELECT * " +
-                "FROM HOADON";
+                "FROM PHIEUTHUEPHONG " +
+                "JOIN NHOM " +
+                "ON PHIEUTHUEPHONG.MANHOM = NHOM.MANHOM";
 
             return conn.excuteReader(sql);
+        }
+
+        public DataTable searchPTP(params SQL_PARAMS[] sqlParams)
+        {
+            string sql =
+                "SELECT * " +
+                "FROM PHIEUTHUEPHONG " +
+                "JOIN NHOM " +
+                "ON PHIEUTHUEPHONG.MANHOM = NHOM.MANHOM";
+
+
+            return conn.excuteReaderWhere(sql, sqlParams);
         }
     }
 }

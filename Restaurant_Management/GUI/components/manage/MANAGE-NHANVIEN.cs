@@ -104,8 +104,8 @@ namespace Restaurant_Management
             if (UTILS.notString(boxMANV.Text)) boxMANV.Text = null;
 
             DataTable dt = nvBUS.searchNV(
-                "TENQUYEN".pair(SqlDbType.NText, boxCV.Text),
-                "TENLOAI".pair(SqlDbType.NText, boxLOAI.Text),
+                "TENQUYEN".pair(SqlDbType.NText, boxLOAI.Text),
+                "TENLOAI".pair(SqlDbType.NText, boxCV.Text),
                 "NHANVIEN.MANV".pair(SqlDbType.NChar, boxMANV.Text, "MANV")
             );
 

@@ -1,4 +1,5 @@
-﻿using Restaurant_Management.SHARE;
+﻿using Restaurant_Management.models;
+using Restaurant_Management.SHARE;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -44,6 +45,40 @@ namespace Restaurant_Management.BUS
             UTILS.addBtnCol(ref dt);
 
             return dt;
+        }
+
+        public void deletePH(string MAPHONG)
+        {
+            phDAO.deletePH(MAPHONG);
+        }
+
+        public void insertPH(params SQL_PARAMS[] sqlParams)
+        {
+            phDAO.insertPH(sqlParams);
+        }
+
+        public List<string> getLPTrong()
+        {
+            DataTable dt = lpDAO.getLPTrong();
+
+            return dt.AsEnumerable().Select(r => r.Field<string>("MALOAI")).ToList();
+        }
+
+        public void deleteLP(SQL_PARAMS sqlParam)
+        {
+            lpDAO.deleteLP(sqlParam);
+        }
+
+        public List<string> getLTTrong()
+        {
+            DataTable dt = ttDAO.getTTTrong();
+
+            return dt.AsEnumerable().Select(r => r.Field<string>("MATT")).ToList();
+        }
+
+        public void deleteTT(SQL_PARAMS sqlParam)
+        {
+            lpDAO.deleteLP(sqlParam);
         }
     }
 }

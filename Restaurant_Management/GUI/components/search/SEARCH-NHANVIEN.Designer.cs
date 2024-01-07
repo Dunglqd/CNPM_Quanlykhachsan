@@ -36,6 +36,9 @@
             this.button15 = new System.Windows.Forms.Button();
             this.dtvContent = new System.Windows.Forms.DataGridView();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.boxLOAI = new System.Windows.Forms.TextBox();
+            this.boxCV = new System.Windows.Forms.TextBox();
+            this.boxMANV = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -44,9 +47,6 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.btnCLEAR = new System.Windows.Forms.Button();
-            this.boxMANV = new System.Windows.Forms.TextBox();
-            this.boxCV = new System.Windows.Forms.TextBox();
-            this.boxLOAI = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).BeginInit();
@@ -85,7 +85,6 @@
             this.label6.Size = new System.Drawing.Size(218, 22);
             this.label6.TabIndex = 1;
             this.label6.Text = "DANH SÁCH NHÂN VIÊN";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -111,6 +110,7 @@
             this.button15.Text = "BACK";
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // dtvContent
             // 
@@ -132,6 +132,7 @@
             this.dtvContent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtvContent.Size = new System.Drawing.Size(335, 570);
             this.dtvContent.TabIndex = 37;
+            this.dtvContent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvContent_CellClick);
             // 
             // panel15
             // 
@@ -150,6 +151,51 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(450, 232);
             this.panel15.TabIndex = 38;
+            // 
+            // boxLOAI
+            // 
+            this.boxLOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxLOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxLOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxLOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxLOAI.ForeColor = System.Drawing.Color.White;
+            this.boxLOAI.Location = new System.Drawing.Point(283, 173);
+            this.boxLOAI.Name = "boxLOAI";
+            this.boxLOAI.Size = new System.Drawing.Size(143, 19);
+            this.boxLOAI.TabIndex = 29;
+            this.boxLOAI.Text = "01";
+            this.boxLOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.boxLOAI.TextChanged += new System.EventHandler(this.boxTextChanged);
+            // 
+            // boxCV
+            // 
+            this.boxCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxCV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxCV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxCV.ForeColor = System.Drawing.Color.White;
+            this.boxCV.Location = new System.Drawing.Point(283, 125);
+            this.boxCV.Name = "boxCV";
+            this.boxCV.Size = new System.Drawing.Size(143, 19);
+            this.boxCV.TabIndex = 28;
+            this.boxCV.Text = "01";
+            this.boxCV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.boxCV.TextChanged += new System.EventHandler(this.boxTextChanged);
+            // 
+            // boxMANV
+            // 
+            this.boxMANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxMANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxMANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxMANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxMANV.ForeColor = System.Drawing.Color.White;
+            this.boxMANV.Location = new System.Drawing.Point(283, 77);
+            this.boxMANV.Name = "boxMANV";
+            this.boxMANV.Size = new System.Drawing.Size(143, 19);
+            this.boxMANV.TabIndex = 27;
+            this.boxMANV.Text = "01";
+            this.boxMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.boxMANV.TextChanged += new System.EventHandler(this.boxTextChanged);
             // 
             // panel1
             // 
@@ -231,54 +277,13 @@
             this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCLEAR.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEAR.ForeColor = System.Drawing.Color.LawnGreen;
-            this.btnCLEAR.Location = new System.Drawing.Point(718, 425);
+            this.btnCLEAR.Location = new System.Drawing.Point(718, 421);
             this.btnCLEAR.Name = "btnCLEAR";
             this.btnCLEAR.Size = new System.Drawing.Size(135, 37);
             this.btnCLEAR.TabIndex = 48;
             this.btnCLEAR.Text = "BỎ CHỌN";
             this.btnCLEAR.UseVisualStyleBackColor = true;
-            // 
-            // boxMANV
-            // 
-            this.boxMANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.boxMANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.boxMANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.boxMANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxMANV.ForeColor = System.Drawing.Color.White;
-            this.boxMANV.Location = new System.Drawing.Point(283, 77);
-            this.boxMANV.Name = "boxMANV";
-            this.boxMANV.Size = new System.Drawing.Size(143, 19);
-            this.boxMANV.TabIndex = 27;
-            this.boxMANV.Text = "01";
-            this.boxMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // boxCV
-            // 
-            this.boxCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.boxCV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.boxCV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.boxCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxCV.ForeColor = System.Drawing.Color.White;
-            this.boxCV.Location = new System.Drawing.Point(283, 125);
-            this.boxCV.Name = "boxCV";
-            this.boxCV.Size = new System.Drawing.Size(143, 19);
-            this.boxCV.TabIndex = 28;
-            this.boxCV.Text = "01";
-            this.boxCV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // boxLOAI
-            // 
-            this.boxLOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.boxLOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.boxLOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.boxLOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxLOAI.ForeColor = System.Drawing.Color.White;
-            this.boxLOAI.Location = new System.Drawing.Point(283, 173);
-            this.boxLOAI.Name = "boxLOAI";
-            this.boxLOAI.Size = new System.Drawing.Size(143, 19);
-            this.boxLOAI.TabIndex = 29;
-            this.boxLOAI.Text = "01";
-            this.boxLOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnCLEAR.Click += new System.EventHandler(this.btnCLEAR_Click);
             // 
             // SEARCH_NHANVIEN
             // 
@@ -294,6 +299,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SEARCH_NHANVIEN";
             this.Text = "SEARCH_NHANVIEN";
+            this.Shown += new System.EventHandler(this.SEARCH_NHANVIEN_Shown);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

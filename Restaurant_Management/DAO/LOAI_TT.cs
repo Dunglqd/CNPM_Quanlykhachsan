@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management.models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -23,6 +24,21 @@ namespace Restaurant_Management.DAO
                 "FROM LOAI_TT";
 
             return conn.excuteReader(sql);
+        }
+
+        public DataTable getTTTrong()
+        {
+            string sql =
+                "SELECT MATT " +
+                "FROM LOAI_TT " +
+                "WHERE MATT NOT IN( SELECT MATT FROM PHONG )";
+
+            return conn.excuteReader(sql);
+        }
+
+        public void deleteTT(SQL_PARAMS sqlParams)
+        {
+            conn.excuteDelete("LOAI_TT", sqlParams);
         }
     }
 }

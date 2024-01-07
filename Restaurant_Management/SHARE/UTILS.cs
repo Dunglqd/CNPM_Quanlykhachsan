@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -10,9 +11,19 @@ namespace Restaurant_Management.SHARE
 {
     class UTILS
     {
+        private readonly static dbConnection conn = new dbConnection();
+
         public static bool selectRow(DataGridViewCellEventArgs e, ref DataGridView dtv, ref DataGridViewRow currentRow, bool isReturn = false)
         {
-            if (isReturn) { return false; }
+            if (isReturn) {
+                currentRow = null;
+                return false; 
+            }
+
+            if (dtv.Rows.Count == 0) {
+                currentRow = null;
+                return false; 
+            }
 
             if (currentRow != null)
             { 
@@ -155,6 +166,20 @@ namespace Restaurant_Management.SHARE
         public static bool notString(string text)
         {
             return String.IsNullOrWhiteSpace(text);
+        }
+
+        public static string getMA(string table, string column)
+        {
+            string newMA = (string) conn.getMax(column, table);
+            newMA = newMA.Trim();
+
+            string prefix = Regex.Replace(newMA, "\\d+", "");
+            string MA_str = Regex.Replace(newMA, "[A-Z]+", "");
+
+            int MA = int.Parse(MA_str) + 1;
+
+
+            return prefix + MA.ToString();
         }
     }
 }

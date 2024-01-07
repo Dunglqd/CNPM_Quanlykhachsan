@@ -4,32 +4,32 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Security.Policy;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Restaurant_Management.BUS
 {
-    internal class SEARCH_NHANVIEN
+    internal class SEARCH_PHIEUTHUEPHONG
     {
-        private DAO.NHANVIEN nvDAO;
+        private DAO.PHIEUTHUEPHONG ptpDAO;
 
-        public SEARCH_NHANVIEN()
+        public SEARCH_PHIEUTHUEPHONG()
         {
-            nvDAO = new DAO.NHANVIEN();
+            ptpDAO = new DAO.PHIEUTHUEPHONG();
         }
 
-        public DataTable getNV()
+        public DataTable searchPTP(params SQL_PARAMS[] sqlParams)
         {
-            DataTable dt = nvDAO.getNV();
+            DataTable dt = ptpDAO.searchPTP(sqlParams);
             UTILS.addBtnCol(ref dt);
 
             return dt;
         }
 
-        public DataTable searchNV(params SQL_PARAMS[] sqlParams)
+        public DataTable getPTP()
         {
-            DataTable dt = nvDAO.searchNV(sqlParams);
+            DataTable dt = ptpDAO.getPTP();
             UTILS.addBtnCol(ref dt);
 
             return dt;

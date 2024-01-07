@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Restaurant_Management.models;
 
 namespace Restaurant_Management.DAO
 {
@@ -43,6 +44,23 @@ namespace Restaurant_Management.DAO
                 "ON PHONG.MALOAI = LOAIPHONG.MALOAI ";
 
             return conn.excuteReader(sql);
+        }
+
+        public void deletePH(string MAPHONG)
+        {
+            string sql =
+                "DELETE FROM PHONG WHERE MAPHONG = @MAPHONG";
+
+            SqlParameter[] sqlParameters = conn.createSqlParameters(
+                "MAPHONG".pair(SqlDbType.NChar, MAPHONG)
+            );
+
+            conn.excuteNonQuery(sql, sqlParameters);
+        }
+
+        public void insertPH(params SQL_PARAMS[] sqlParams)
+        {
+            conn.excuteInsert("PHONG", sqlParams);
         }
     }
 }

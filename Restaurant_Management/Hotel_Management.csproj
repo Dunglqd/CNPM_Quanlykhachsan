@@ -63,6 +63,7 @@
     <Compile Include="BUS\MANAGE\MANAGE_QUYEN.cs" />
     <Compile Include="BUS\MANAGE\MANAGE_ROOM.cs" />
     <Compile Include="BUS\SEARCH_NHANVIEN.cs" />
+    <Compile Include="BUS\SEARCH_PHIEUTHUEPHONG.cs" />
     <Compile Include="DAO\DK_PHUTHU.cs" />
     <Compile Include="DAO\HETHONG.cs" />
     <Compile Include="DAO\HOADON.cs" />
