@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SEARCH_NHANVIEN));
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtvContent = new System.Windows.Forms.DataGridView();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCLEAR = new System.Windows.Forms.Button();
+            this.boxMANV = new System.Windows.Forms.TextBox();
+            this.boxCV = new System.Windows.Forms.TextBox();
+            this.boxLOAI = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).BeginInit();
+            this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel6
@@ -63,6 +63,17 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(335, 83);
             this.panel6.TabIndex = 15;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(28, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // label6
             // 
@@ -101,37 +112,37 @@
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dtvContent
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtvContent.AllowUserToAddRows = false;
+            this.dtvContent.AllowUserToDeleteRows = false;
+            this.dtvContent.AllowUserToOrderColumns = true;
+            this.dtvContent.AllowUserToResizeColumns = false;
+            this.dtvContent.AllowUserToResizeRows = false;
+            this.dtvContent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 170);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(335, 570);
-            this.dataGridView2.TabIndex = 37;
+            this.dtvContent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvContent.BackgroundColor = System.Drawing.Color.White;
+            this.dtvContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtvContent.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtvContent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvContent.Location = new System.Drawing.Point(12, 170);
+            this.dtvContent.Name = "dtvContent";
+            this.dtvContent.ReadOnly = true;
+            this.dtvContent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvContent.Size = new System.Drawing.Size(335, 570);
+            this.dtvContent.TabIndex = 37;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.boxLOAI);
+            this.panel15.Controls.Add(this.boxCV);
+            this.panel15.Controls.Add(this.boxMANV);
             this.panel15.Controls.Add(this.panel1);
-            this.panel15.Controls.Add(this.label1);
             this.panel15.Controls.Add(this.button1);
             this.panel15.Controls.Add(this.panel8);
             this.panel15.Controls.Add(this.panel9);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.label25);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
             this.panel15.Controls.Add(this.label24);
@@ -139,6 +150,27 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(450, 232);
             this.panel15.TabIndex = 38;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel1.Location = new System.Drawing.Point(300, 203);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 1);
+            this.panel1.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button1.Location = new System.Drawing.Point(3, 162);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 42);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "LOẠI";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
@@ -155,30 +187,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 1);
             this.panel9.TabIndex = 10;
-            // 
-            // label26
-            // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label26.Location = new System.Drawing.Point(398, 125);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(22, 17);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "05";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label25.Location = new System.Drawing.Point(398, 79);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 17);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "02";
             // 
             // button12
             // 
@@ -218,61 +226,59 @@
             this.label24.TabIndex = 1;
             this.label24.Text = "THONG TIN NHÂN VIÊN";
             // 
-            // panel1
+            // btnCLEAR
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel1.Location = new System.Drawing.Point(300, 203);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 1);
-            this.panel1.TabIndex = 14;
+            this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCLEAR.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLEAR.ForeColor = System.Drawing.Color.LawnGreen;
+            this.btnCLEAR.Location = new System.Drawing.Point(718, 425);
+            this.btnCLEAR.Name = "btnCLEAR";
+            this.btnCLEAR.Size = new System.Drawing.Size(135, 37);
+            this.btnCLEAR.TabIndex = 48;
+            this.btnCLEAR.Text = "BỎ CHỌN";
+            this.btnCLEAR.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // boxMANV
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label1.Location = new System.Drawing.Point(398, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "05";
+            this.boxMANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxMANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxMANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxMANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxMANV.ForeColor = System.Drawing.Color.White;
+            this.boxMANV.Location = new System.Drawing.Point(283, 77);
+            this.boxMANV.Name = "boxMANV";
+            this.boxMANV.Size = new System.Drawing.Size(143, 19);
+            this.boxMANV.TabIndex = 27;
+            this.boxMANV.Text = "01";
+            this.boxMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button1
+            // boxCV
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button1.Location = new System.Drawing.Point(3, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 42);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "LOẠI";
-            this.button1.UseVisualStyleBackColor = true;
+            this.boxCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxCV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxCV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxCV.ForeColor = System.Drawing.Color.White;
+            this.boxCV.Location = new System.Drawing.Point(283, 125);
+            this.boxCV.Name = "boxCV";
+            this.boxCV.Size = new System.Drawing.Size(143, 19);
+            this.boxCV.TabIndex = 28;
+            this.boxCV.Text = "01";
+            this.boxCV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // pictureBox3
+            // boxLOAI
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(28, 22);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.LawnGreen;
-            this.button4.Location = new System.Drawing.Point(718, 425);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 26);
-            this.button4.TabIndex = 48;
-            this.button4.Text = "TÌM KIẾM";
-            this.button4.UseVisualStyleBackColor = true;
+            this.boxLOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.boxLOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxLOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.boxLOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxLOAI.ForeColor = System.Drawing.Color.White;
+            this.boxLOAI.Location = new System.Drawing.Point(283, 173);
+            this.boxLOAI.Name = "boxLOAI";
+            this.boxLOAI.Size = new System.Drawing.Size(143, 19);
+            this.boxLOAI.TabIndex = 29;
+            this.boxLOAI.Text = "01";
+            this.boxLOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // SEARCH_NHANVIEN
             // 
@@ -280,9 +286,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(897, 773);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnCLEAR);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dtvContent);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -290,10 +296,10 @@
             this.Text = "SEARCH_NHANVIEN";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,18 +311,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtvContent;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCLEAR;
+        private System.Windows.Forms.TextBox boxLOAI;
+        private System.Windows.Forms.TextBox boxCV;
+        private System.Windows.Forms.TextBox boxMANV;
     }
 }

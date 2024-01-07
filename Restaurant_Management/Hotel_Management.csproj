@@ -55,13 +55,14 @@
   <ItemGroup>
     <Compile Include="BUS\BOOK_ROOM.cs" />
     <Compile Include="BUS\LOGIN.cs" />
-    <Compile Include="BUS\MANAGE_DKPT.cs" />
-    <Compile Include="BUS\MANAGE_HOADON.cs" />
-    <Compile Include="BUS\MANAGE_KHACHHANG.cs" />
-    <Compile Include="BUS\MANAGE_NHANVIEN.cs" />
-    <Compile Include="BUS\MANAGE_PHIEUTHUEPHONG.cs" />
-    <Compile Include="BUS\MANAGE_QUYEN.cs" />
-    <Compile Include="BUS\MANAGE_ROOM.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_DKPT.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_HOADON.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_KHACHHANG.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_NHANVIEN.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_PHIEUTHUEPHONG.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_QUYEN.cs" />
+    <Compile Include="BUS\MANAGE\MANAGE_ROOM.cs" />
+    <Compile Include="BUS\SEARCH_NHANVIEN.cs" />
     <Compile Include="DAO\DK_PHUTHU.cs" />
     <Compile Include="DAO\HETHONG.cs" />
     <Compile Include="DAO\HOADON.cs" />
@@ -481,9 +482,7 @@
   <ItemGroup>
     <None Include="Resources\user %282%291.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\components\main\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="SQL\INSERT_DATA.sql" />
   </ItemGroup>
