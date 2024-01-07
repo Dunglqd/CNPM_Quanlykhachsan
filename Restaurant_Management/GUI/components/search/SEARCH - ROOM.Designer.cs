@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SEARCH___ROOM));
             this.panel6 = new System.Windows.Forms.Panel();
+            this.BoxPHONG = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BoxLOAIPHONG = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtvPH = new System.Windows.Forms.DataGridView();
@@ -40,8 +42,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -53,13 +53,27 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel6.Controls.Add(this.textBox4);
+            this.panel6.Controls.Add(this.BoxPHONG);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(37, 111);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(377, 83);
             this.panel6.TabIndex = 15;
+            // 
+            // BoxPHONG
+            // 
+            this.BoxPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BoxPHONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BoxPHONG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BoxPHONG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxPHONG.ForeColor = System.Drawing.Color.White;
+            this.BoxPHONG.Location = new System.Drawing.Point(190, 36);
+            this.BoxPHONG.Name = "BoxPHONG";
+            this.BoxPHONG.Size = new System.Drawing.Size(171, 19);
+            this.BoxPHONG.TabIndex = 27;
+            this.BoxPHONG.Text = "01";
+            this.BoxPHONG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox3
             // 
@@ -87,13 +101,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.BoxLOAIPHONG);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(462, 111);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(387, 83);
             this.panel1.TabIndex = 16;
+            // 
+            // BoxLOAIPHONG
+            // 
+            this.BoxLOAIPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BoxLOAIPHONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BoxLOAIPHONG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BoxLOAIPHONG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxLOAIPHONG.ForeColor = System.Drawing.Color.White;
+            this.BoxLOAIPHONG.Location = new System.Drawing.Point(244, 36);
+            this.BoxLOAIPHONG.Name = "BoxLOAIPHONG";
+            this.BoxLOAIPHONG.Size = new System.Drawing.Size(123, 19);
+            this.BoxLOAIPHONG.TabIndex = 27;
+            this.BoxLOAIPHONG.Text = "01";
+            this.BoxLOAIPHONG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox1
             // 
@@ -198,34 +226,6 @@
             this.button1.Text = "TÌM KIẾM";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(190, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 19);
-            this.textBox4.TabIndex = 27;
-            this.textBox4.Text = "01";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(244, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 19);
-            this.textBox1.TabIndex = 27;
-            this.textBox1.Text = "01";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // SEARCH___ROOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,7 +267,7 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox BoxPHONG;
+        private System.Windows.Forms.TextBox BoxLOAIPHONG;
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel15 = new System.Windows.Forms.Panel();
+            this.S_TENKH = new System.Windows.Forms.TextBox();
+            this.S_MAKH = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
@@ -38,12 +40,17 @@
             this.dtvKH = new System.Windows.Forms.DataGridView();
             this.dtvLKH = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.S_TENLOAIKH = new System.Windows.Forms.TextBox();
+            this.S_MALOAIKH = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.S_PT = new System.Windows.Forms.TextBox();
+            this.S_SL = new System.Windows.Forms.TextBox();
+            this.S_MADKPT = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -52,13 +59,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dtvPT = new System.Windows.Forms.DataGridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtvKH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvLKH)).BeginInit();
@@ -70,8 +70,8 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel15.Controls.Add(this.textBox1);
-            this.panel15.Controls.Add(this.textBox4);
+            this.panel15.Controls.Add(this.S_TENKH);
+            this.panel15.Controls.Add(this.S_MAKH);
             this.panel15.Controls.Add(this.panel8);
             this.panel15.Controls.Add(this.panel9);
             this.panel15.Controls.Add(this.button12);
@@ -81,6 +81,34 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(450, 165);
             this.panel15.TabIndex = 27;
+            // 
+            // S_TENKH
+            // 
+            this.S_TENKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_TENKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_TENKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_TENKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_TENKH.ForeColor = System.Drawing.Color.White;
+            this.S_TENKH.Location = new System.Drawing.Point(225, 125);
+            this.S_TENKH.Name = "S_TENKH";
+            this.S_TENKH.Size = new System.Drawing.Size(199, 19);
+            this.S_TENKH.TabIndex = 28;
+            this.S_TENKH.Text = "01";
+            this.S_TENKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // S_MAKH
+            // 
+            this.S_MAKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_MAKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_MAKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_MAKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_MAKH.ForeColor = System.Drawing.Color.White;
+            this.S_MAKH.Location = new System.Drawing.Point(281, 77);
+            this.S_MAKH.Name = "S_MAKH";
+            this.S_MAKH.Size = new System.Drawing.Size(143, 19);
+            this.S_MAKH.TabIndex = 27;
+            this.S_MAKH.Text = "01";
+            this.S_MAKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel8
             // 
@@ -195,8 +223,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.S_TENLOAIKH);
+            this.panel1.Controls.Add(this.S_MALOAIKH);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button1);
@@ -206,6 +234,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 165);
             this.panel1.TabIndex = 36;
+            // 
+            // S_TENLOAIKH
+            // 
+            this.S_TENLOAIKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_TENLOAIKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_TENLOAIKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_TENLOAIKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_TENLOAIKH.ForeColor = System.Drawing.Color.White;
+            this.S_TENLOAIKH.Location = new System.Drawing.Point(278, 125);
+            this.S_TENLOAIKH.Name = "S_TENLOAIKH";
+            this.S_TENLOAIKH.Size = new System.Drawing.Size(143, 19);
+            this.S_TENLOAIKH.TabIndex = 28;
+            this.S_TENLOAIKH.Text = "01";
+            this.S_TENLOAIKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // S_MALOAIKH
+            // 
+            this.S_MALOAIKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_MALOAIKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_MALOAIKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_MALOAIKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_MALOAIKH.ForeColor = System.Drawing.Color.White;
+            this.S_MALOAIKH.Location = new System.Drawing.Point(278, 77);
+            this.S_MALOAIKH.Name = "S_MALOAIKH";
+            this.S_MALOAIKH.Size = new System.Drawing.Size(143, 19);
+            this.S_MALOAIKH.TabIndex = 27;
+            this.S_MALOAIKH.Text = "01";
+            this.S_MALOAIKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -264,9 +320,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel4.Controls.Add(this.textBox7);
-            this.panel4.Controls.Add(this.textBox6);
-            this.panel4.Controls.Add(this.textBox5);
+            this.panel4.Controls.Add(this.S_PT);
+            this.panel4.Controls.Add(this.S_SL);
+            this.panel4.Controls.Add(this.S_MADKPT);
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.panel5);
@@ -279,6 +335,48 @@
             this.panel4.Size = new System.Drawing.Size(450, 265);
             this.panel4.TabIndex = 37;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // S_PT
+            // 
+            this.S_PT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_PT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_PT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_PT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_PT.ForeColor = System.Drawing.Color.White;
+            this.S_PT.Location = new System.Drawing.Point(275, 173);
+            this.S_PT.Name = "S_PT";
+            this.S_PT.Size = new System.Drawing.Size(143, 19);
+            this.S_PT.TabIndex = 29;
+            this.S_PT.Text = "01";
+            this.S_PT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // S_SL
+            // 
+            this.S_SL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_SL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_SL.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_SL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_SL.ForeColor = System.Drawing.Color.White;
+            this.S_SL.Location = new System.Drawing.Point(275, 125);
+            this.S_SL.Name = "S_SL";
+            this.S_SL.Size = new System.Drawing.Size(143, 19);
+            this.S_SL.TabIndex = 28;
+            this.S_SL.Text = "01";
+            this.S_SL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // S_MADKPT
+            // 
+            this.S_MADKPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.S_MADKPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.S_MADKPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.S_MADKPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_MADKPT.ForeColor = System.Drawing.Color.White;
+            this.S_MADKPT.Location = new System.Drawing.Point(275, 77);
+            this.S_MADKPT.Name = "S_MADKPT";
+            this.S_MADKPT.Size = new System.Drawing.Size(143, 19);
+            this.S_MADKPT.TabIndex = 27;
+            this.S_MADKPT.Text = "01";
+            this.S_MADKPT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel7
             // 
@@ -377,104 +475,6 @@
             this.dtvPT.Size = new System.Drawing.Size(377, 265);
             this.dtvPT.TabIndex = 38;
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(281, 77);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(143, 19);
-            this.textBox4.TabIndex = 27;
-            this.textBox4.Text = "01";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(225, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 19);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.Text = "01";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(278, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 19);
-            this.textBox2.TabIndex = 27;
-            this.textBox2.Text = "01";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(278, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 19);
-            this.textBox3.TabIndex = 28;
-            this.textBox3.Text = "01";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(275, 77);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(143, 19);
-            this.textBox5.TabIndex = 27;
-            this.textBox5.Text = "01";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(275, 125);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(143, 19);
-            this.textBox6.TabIndex = 28;
-            this.textBox6.Text = "01";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(275, 173);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(143, 19);
-            this.textBox7.TabIndex = 29;
-            this.textBox7.Text = "01";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // SEARCH_KHACHHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -530,12 +530,12 @@
         private System.Windows.Forms.DataGridView dtvPT;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox S_TENKH;
+        private System.Windows.Forms.TextBox S_MAKH;
+        private System.Windows.Forms.TextBox S_TENLOAIKH;
+        private System.Windows.Forms.TextBox S_MALOAIKH;
+        private System.Windows.Forms.TextBox S_PT;
+        private System.Windows.Forms.TextBox S_SL;
+        private System.Windows.Forms.TextBox S_MADKPT;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
@@ -43,16 +44,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.BOX_MALOAI = new System.Windows.Forms.TextBox();
+            this.BOX_MATEN = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -65,6 +65,17 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(360, 83);
             this.panel6.TabIndex = 15;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.pictureBox3.Image = global::Restaurant_Management.Properties.Resources.increase__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(28, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // label6
             // 
@@ -215,10 +226,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.BOX_MATEN);
+            this.panel1.Controls.Add(this.BOX_MALOAI);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.label3);
@@ -242,30 +253,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 1);
             this.panel3.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label1.Location = new System.Drawing.Point(398, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "05";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label2.Location = new System.Drawing.Point(398, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "02";
             // 
             // button5
             // 
@@ -305,16 +292,33 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "LOẠI PHÒNG";
             // 
-            // pictureBox3
+            // BOX_MALOAI
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.pictureBox3.Image = global::Restaurant_Management.Properties.Resources.increase__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(28, 22);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.BOX_MALOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MALOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MALOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MALOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MALOAI.ForeColor = System.Drawing.Color.White;
+            this.BOX_MALOAI.Location = new System.Drawing.Point(356, 77);
+            this.BOX_MALOAI.Name = "BOX_MALOAI";
+            this.BOX_MALOAI.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MALOAI.TabIndex = 23;
+            this.BOX_MALOAI.Text = "01";
+            this.BOX_MALOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MATEN
+            // 
+            this.BOX_MATEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MATEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MATEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MATEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MATEN.ForeColor = System.Drawing.Color.White;
+            this.BOX_MATEN.Location = new System.Drawing.Point(356, 125);
+            this.BOX_MATEN.Name = "BOX_MATEN";
+            this.BOX_MATEN.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MATEN.TabIndex = 24;
+            this.BOX_MATEN.Text = "01";
+            this.BOX_MATEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // REPORT_LOAIPHONG
             // 
@@ -338,10 +342,10 @@
             this.Text = "REPORT_LOAIPHONG";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,10 +368,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox BOX_MATEN;
+        private System.Windows.Forms.TextBox BOX_MALOAI;
     }
 }

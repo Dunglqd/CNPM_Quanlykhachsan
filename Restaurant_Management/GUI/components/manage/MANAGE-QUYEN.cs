@@ -63,5 +63,10 @@ namespace Restaurant_Management
             lbPASSWORD.Text = currentQ.Cells["PASSWORD"].Value.ToString();
             lbUSERNAME.Text = currentQ.Cells["USERNAME"].Value.ToString();
         }
+
+        private void panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

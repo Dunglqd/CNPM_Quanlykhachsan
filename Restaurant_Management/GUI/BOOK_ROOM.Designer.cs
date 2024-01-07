@@ -34,10 +34,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.button14 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -51,6 +47,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dtvNH = new System.Windows.Forms.DataGridView();
             this.btnBangDatPhong = new System.Windows.Forms.Button();
+            this.TEN = new System.Windows.Forms.TextBox();
+            this.CMND = new System.Windows.Forms.TextBox();
+            this.LOAIPHONG = new System.Windows.Forms.TextBox();
+            this.TINHTRANG = new System.Windows.Forms.TextBox();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel15.SuspendLayout();
@@ -106,11 +106,11 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.TINHTRANG);
+            this.panel15.Controls.Add(this.LOAIPHONG);
+            this.panel15.Controls.Add(this.CMND);
+            this.panel15.Controls.Add(this.TEN);
             this.panel15.Controls.Add(this.button14);
-            this.panel15.Controls.Add(this.label28);
-            this.panel15.Controls.Add(this.label27);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.label25);
             this.panel15.Controls.Add(this.button13);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
@@ -133,54 +133,6 @@
             this.button14.Text = "TÌNH TRẠNG";
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button14.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label28.Location = new System.Drawing.Point(229, 223);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(22, 17);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "12";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label27.Location = new System.Drawing.Point(229, 175);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(22, 17);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "04";
-            // 
-            // label26
-            // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label26.Location = new System.Drawing.Point(229, 125);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(22, 17);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "05";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label25.Location = new System.Drawing.Point(229, 79);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 17);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "02";
             // 
             // button13
             // 
@@ -384,6 +336,38 @@
             this.btnBangDatPhong.UseVisualStyleBackColor = false;
             this.btnBangDatPhong.Click += new System.EventHandler(this.btnBangDatPhong_Click);
             // 
+            // TEN
+            // 
+            this.TEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.TEN.Location = new System.Drawing.Point(162, 79);
+            this.TEN.Name = "TEN";
+            this.TEN.Size = new System.Drawing.Size(100, 20);
+            this.TEN.TabIndex = 6;
+            // 
+            // CMND
+            // 
+            this.CMND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.CMND.Location = new System.Drawing.Point(162, 127);
+            this.CMND.Name = "CMND";
+            this.CMND.Size = new System.Drawing.Size(100, 20);
+            this.CMND.TabIndex = 7;
+            // 
+            // LOAIPHONG
+            // 
+            this.LOAIPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.LOAIPHONG.Location = new System.Drawing.Point(162, 175);
+            this.LOAIPHONG.Name = "LOAIPHONG";
+            this.LOAIPHONG.Size = new System.Drawing.Size(100, 20);
+            this.LOAIPHONG.TabIndex = 8;
+            // 
+            // TINHTRANG
+            // 
+            this.TINHTRANG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.TINHTRANG.Location = new System.Drawing.Point(162, 223);
+            this.TINHTRANG.Name = "TINHTRANG";
+            this.TINHTRANG.Size = new System.Drawing.Size(100, 20);
+            this.TINHTRANG.TabIndex = 9;
+            // 
             // BOOK_ROOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,10 +409,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
@@ -442,5 +422,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dtvNH;
         private System.Windows.Forms.Button btnBangDatPhong;
+        private System.Windows.Forms.TextBox TINHTRANG;
+        private System.Windows.Forms.TextBox LOAIPHONG;
+        private System.Windows.Forms.TextBox CMND;
+        private System.Windows.Forms.TextBox TEN;
     }
 }
