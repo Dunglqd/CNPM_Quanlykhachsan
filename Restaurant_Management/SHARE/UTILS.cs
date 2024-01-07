@@ -151,5 +151,10 @@ namespace Restaurant_Management.SHARE
         {
             return e.RowIndex == -1;
         }
+
+        public static bool notString(string text)
+        {
+            return String.IsNullOrWhiteSpace(text);
+        }
     }
 }

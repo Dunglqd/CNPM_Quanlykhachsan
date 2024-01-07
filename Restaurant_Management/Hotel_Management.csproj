@@ -164,6 +164,7 @@
     <Compile Include="GUI\MANAGE.Designer.cs">
       <DependentUpon>MANAGE.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\SQL_PARAMS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\PTP.cs">

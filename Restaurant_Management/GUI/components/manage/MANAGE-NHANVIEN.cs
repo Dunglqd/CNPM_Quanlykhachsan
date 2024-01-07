@@ -21,58 +21,28 @@ namespace Restaurant_Management
             nvBUS = new BUS.MANAGE_NHANVIEN();
             InitializeComponent();
             loadData();
-            resetLb();
+            resetBox();
         }
 
-        private void loadData()
+        private void loadData(DataTable dt = null)
         {
-            dtvNV.DataSource = nvBUS.getNV();
+            if (dt == null)
+                dtvNV.DataSource = nvBUS.getNV();
+            else
+                dtvNV.DataSource = dt;
+
             UTILS.showColumn(ref dtvNV, new string[] { "MANV", "TENNV", "TENLOAI", "TENQUYEN" });
+            dtvNV.ClearSelection();
         }
 
-        private void resetLb()
+        private void resetBox()
         {
-            lbCV.Text = String.Empty;
-            lbLOAI.Text = String.Empty;
-            lbMANV.Text = String.Empty;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbMANV_Click(object sender, EventArgs e)
-        {
-
+            boxCV.Text = String.Empty;
+            boxLOAI.Text = String.Empty;
+            boxMANV.Text = String.Empty;
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbCV_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel15_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -85,18 +55,61 @@ namespace Restaurant_Management
 
             if (!select)
             {
-                resetLb();
+                resetBox();
                 return;
             }
 
-            lbCV.Text = currentNV.Cells["TENLOAI"].Value.ToString();
-            lbLOAI.Text = currentNV.Cells["TENQUYEN"].Value.ToString();
-            lbMANV.Text = currentNV.Cells["MANV"].Value.ToString();
+            boxCV.Text = currentNV.Cells["TENLOAI"].Value.ToString();
+            boxLOAI.Text = currentNV.Cells["TENQUYEN"].Value.ToString();
+            boxMANV.Text = currentNV.Cells["MANV"].Value.ToString().Trim();
         }
 
         private void MANAGE_NHANVIEN_Shown(object sender, EventArgs e)
         {
+            loadData();
+        }
+
+        private void btnBACK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDEL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnADD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEDIT_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCLEAR_Click(object sender, EventArgs e)
+        {
+            resetBox();
+            loadData();
             dtvNV.ClearSelection();
+            currentNV = null;
+        }
+
+        private void btnSEARCH_Click(object sender, EventArgs e)
+        {
+            if (UTILS.notString(boxCV.Text)) boxCV.Text = null;
+            if (UTILS.notString(boxLOAI.Text)) boxLOAI.Text = null;
+            if (UTILS.notString(boxMANV.Text)) boxMANV.Text = null;
+
+            DataTable dt = nvBUS.searchNV(
+                "TENQUYEN".pair(SqlDbType.NText, boxCV.Text),
+                "TENLOAI".pair(SqlDbType.NText, boxLOAI.Text),
+                "NHANVIEN.MANV".pair(SqlDbType.NChar, boxMANV.Text, "MANV")
+            );
+
+            loadData(dt);
         }
     }
 }

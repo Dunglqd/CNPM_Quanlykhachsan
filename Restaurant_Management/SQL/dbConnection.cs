@@ -1,8 +1,11 @@
-﻿using Restaurant_Management.Properties;
+﻿using Restaurant_Management.models;
+using Restaurant_Management.Properties;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
+using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,6 +95,59 @@ namespace Restaurant_Management
             }
 
             return sqlParameters;
+        }
+
+        public SqlParameter[] createSqlParameters(params SQL_PARAMS[] sqlParams)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[sqlParams.Length];
+
+            int i = 0;
+            foreach (SQL_PARAMS sqlParam in sqlParams)
+            {
+                sqlParameters[i] = new SqlParameter(sqlParam.key, sqlParam.dbType);
+                sqlParameters[i].Value = sqlParam.value;
+                i += 1;
+
+            }
+
+            return sqlParameters;
+        }
+
+        public DataTable excuteReaderWhere(string sql, params SQL_PARAMS[] sqlParams)
+        {
+            sql += " WHERE ";
+
+            bool addAnd = false;
+            foreach(SQL_PARAMS sqlParam in sqlParams)
+            {
+                if (String.IsNullOrWhiteSpace(sqlParam.value.ToString()) || sqlParam.value == null)
+                {
+                    continue;
+                }
+                
+                sql += sqlParam.column;
+
+                if (sqlParam.dbType == SqlDbType.NText)
+                    sql += " LIKE ";
+                else
+                    sql += " = ";
+
+                sql += "@" + sqlParam.key;
+
+                sql += " COLLATE SQL_Latin1_General_CP1_CS_AS ";
+
+
+                if (addAnd)
+                {
+                    sql += " AND ";
+                }
+
+                addAnd = true;
+            }
+            
+            SqlParameter[] sqlParameters = createSqlParameters(sqlParams);
+
+            return excuteReader(sql, sqlParameters);
         }
     }
 }

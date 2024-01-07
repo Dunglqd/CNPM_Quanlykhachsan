@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.dtvPTP = new System.Windows.Forms.DataGridView();
             this.panel15 = new System.Windows.Forms.Panel();
             this.lbMAKH = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.lbNGBD = new System.Windows.Forms.Label();
@@ -57,22 +58,21 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPTP)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button5
+            // btnSearch
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.LawnGreen;
-            this.button5.Location = new System.Drawing.Point(684, 71);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(135, 26);
-            this.button5.TabIndex = 52;
-            this.button5.Text = "TÌM KIẾM";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.LawnGreen;
+            this.btnSearch.Location = new System.Drawing.Point(684, 57);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(135, 26);
+            this.btnSearch.TabIndex = 52;
+            this.btnSearch.Text = "TÌM KIẾM";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // dtvPTP
             // 
@@ -232,6 +232,21 @@
             this.button4.Text = "   MÃ KHÁCH HÀNG";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button3.Image = global::Restaurant_Management.Properties.Resources.user__1_;
+            this.button3.Location = new System.Drawing.Point(17, 346);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 42);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "     MÃ NHÂN VIÊN";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -435,21 +450,6 @@
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button3.Image = global::Restaurant_Management.Properties.Resources.user__1_;
-            this.button3.Location = new System.Drawing.Point(17, 346);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 42);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "     MÃ NHÂN VIÊN";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // MANAGE_PTP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,7 +460,7 @@
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dtvPTP);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.button15);
@@ -477,7 +477,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dtvPTP;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label lbMAKH;

@@ -1,4 +1,5 @@
-﻿using Restaurant_Management.SHARE;
+﻿using Restaurant_Management.models;
+using Restaurant_Management.SHARE;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -21,6 +22,14 @@ namespace Restaurant_Management.BUS
         public DataTable getNV()
         {
             DataTable dt = nvDAO.getNV();
+            UTILS.addBtnCol(ref dt);
+
+            return dt;
+        }
+
+        public DataTable searchNV(params SQL_PARAMS[] sqlParmas)
+        {
+            DataTable dt = nvDAO.searchNV(sqlParmas);
             UTILS.addBtnCol(ref dt);
 
             return dt;
