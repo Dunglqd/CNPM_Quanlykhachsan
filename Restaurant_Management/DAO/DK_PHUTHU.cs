@@ -33,5 +33,14 @@ namespace Restaurant_Management.DAO
 
             return conn.excuteReader(sql, sqlParameters);
         }
+
+        public DataTable getDK_PT()
+        {
+            string sql =
+                "SELECT * " +
+                "FROM DK_PHUTHU";
+
+            return conn.excuteReader(sql);
+        }
     }
 }

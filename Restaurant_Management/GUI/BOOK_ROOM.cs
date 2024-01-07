@@ -43,8 +43,8 @@ namespace Restaurant_Management
 
         private void button16_Click(object sender, EventArgs e)
         {
-            UTILS.DeselectCell(ref dtvNH, ref currentNH);
-            UTILS.DeselectCell(ref dtvPH, ref currentPH);
+            UTILS.deselectRow(ref dtvNH, ref currentNH);
+            UTILS.deselectRow(ref dtvPH, ref currentPH);
         }
 
         private void btnBangDatPhong_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace Restaurant_Management
         {
             if (UTILS.clickHeader(e)) return;
 
-            bool selected = UTILS.SelectRow(e, ref dtvNH, ref currentNH);
+            bool selected = UTILS.selectRow(e, ref dtvNH, ref currentNH);
         }
 
         private void dtvRoom_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -80,7 +80,7 @@ namespace Restaurant_Management
 
             bool isReturn = tinhTrang.Contains("Đ");
 
-            bool selected = UTILS.SelectRow(e, ref dtvPH, ref currentPH, isReturn);
+            bool selected = UTILS.selectRow(e, ref dtvPH, ref currentPH, isReturn);
         }
     }
 }

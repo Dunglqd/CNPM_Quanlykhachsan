@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management
 {
-    partial class MANAGE___ROOM
+    partial class MANAGE_ROOM
     {
         /// <summary>
         /// Required designer variable.
@@ -32,13 +32,13 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtvContent = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btnPH = new System.Windows.Forms.Button();
+            this.btnLP = new System.Windows.Forms.Button();
+            this.btnTT = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeSelect
@@ -95,26 +95,28 @@
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dtvContent
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtvContent.AllowUserToAddRows = false;
+            this.dtvContent.AllowUserToDeleteRows = false;
+            this.dtvContent.AllowUserToOrderColumns = true;
+            this.dtvContent.AllowUserToResizeColumns = false;
+            this.dtvContent.AllowUserToResizeRows = false;
+            this.dtvContent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(403, 72);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(332, 480);
-            this.dataGridView2.TabIndex = 63;
+            this.dtvContent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvContent.BackgroundColor = System.Drawing.Color.White;
+            this.dtvContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtvContent.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtvContent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvContent.Location = new System.Drawing.Point(403, 72);
+            this.dtvContent.MultiSelect = false;
+            this.dtvContent.Name = "dtvContent";
+            this.dtvContent.ReadOnly = true;
+            this.dtvContent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvContent.Size = new System.Drawing.Size(332, 480);
+            this.dtvContent.TabIndex = 63;
+            this.dtvContent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvContent_CellClick);
             // 
             // button4
             // 
@@ -142,62 +144,66 @@
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnPH
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.LawnGreen;
-            this.button5.Location = new System.Drawing.Point(21, 143);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(145, 45);
-            this.button5.TabIndex = 68;
-            this.button5.Text = "PHÒNG";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPH.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPH.ForeColor = System.Drawing.Color.LawnGreen;
+            this.btnPH.Location = new System.Drawing.Point(21, 143);
+            this.btnPH.Name = "btnPH";
+            this.btnPH.Size = new System.Drawing.Size(145, 45);
+            this.btnPH.TabIndex = 68;
+            this.btnPH.Text = "PHÒNG";
+            this.btnPH.UseVisualStyleBackColor = true;
+            this.btnPH.Click += new System.EventHandler(this.btnPH_Click);
             // 
-            // button1
+            // btnLP
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LawnGreen;
-            this.button1.Location = new System.Drawing.Point(21, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 45);
-            this.button1.TabIndex = 69;
-            this.button1.Text = "LOẠI PHÒNG";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLP.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLP.ForeColor = System.Drawing.Color.LawnGreen;
+            this.btnLP.Location = new System.Drawing.Point(21, 194);
+            this.btnLP.Name = "btnLP";
+            this.btnLP.Size = new System.Drawing.Size(145, 45);
+            this.btnLP.TabIndex = 69;
+            this.btnLP.Text = "LOẠI PHÒNG";
+            this.btnLP.UseVisualStyleBackColor = true;
+            this.btnLP.Click += new System.EventHandler(this.btnLP_Click);
             // 
-            // button2
+            // btnTT
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.button2.Location = new System.Drawing.Point(21, 250);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 45);
-            this.button2.TabIndex = 70;
-            this.button2.Text = "TÌNH TRẠNG";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTT.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTT.ForeColor = System.Drawing.Color.LawnGreen;
+            this.btnTT.Location = new System.Drawing.Point(21, 250);
+            this.btnTT.Name = "btnTT";
+            this.btnTT.Size = new System.Drawing.Size(145, 45);
+            this.btnTT.TabIndex = 70;
+            this.btnTT.Text = "TÌNH TRẠNG";
+            this.btnTT.UseVisualStyleBackColor = true;
+            this.btnTT.Click += new System.EventHandler(this.btnTT_Click);
             // 
-            // MANAGE___ROOM
+            // MANAGE_ROOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(772, 598);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnTT);
+            this.Controls.Add(this.btnLP);
+            this.Controls.Add(this.btnPH);
             this.Controls.Add(this.btnDeSelect);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dtvContent);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MANAGE___ROOM";
+            this.Name = "MANAGE_ROOM";
             this.Text = "MANAGE___ROOM";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Shown += new System.EventHandler(this.MANAGE_ROOM_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.dtvContent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,11 +214,11 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtvContent;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPH;
+        private System.Windows.Forms.Button btnLP;
+        private System.Windows.Forms.Button btnTT;
     }
 }

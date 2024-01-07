@@ -75,7 +75,7 @@ namespace Restaurant_Management
         {
             if (UTILS.clickHeader(e)) return;
 
-            bool selected = UTILS.SelectRow(e, ref dtvKH, ref currentKH);
+            bool selected = UTILS.selectRow(e, ref dtvKH, ref currentKH);
 
             dtvLKH.DataSource = null;
             currentL_KH = null;
@@ -103,7 +103,7 @@ namespace Restaurant_Management
         {
             if (UTILS.clickHeader(e)) return;
 
-            bool selected = UTILS.SelectRow(e, ref dtvLKH, ref currentL_KH);
+            bool selected = UTILS.selectRow(e, ref dtvLKH, ref currentL_KH);
 
             dtvNH_PT.DataSource = null;
             currentPT = null;
@@ -127,7 +127,7 @@ namespace Restaurant_Management
         {
             if (UTILS.clickHeader(e)) return;
 
-            bool selected = UTILS.SelectRow(e, ref dtvNH_PT, ref currentPT);
+            bool selected = UTILS.selectRow(e, ref dtvNH_PT, ref currentPT);
 
             if (!selected)
             {

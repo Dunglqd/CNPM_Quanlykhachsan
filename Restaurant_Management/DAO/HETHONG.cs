@@ -34,6 +34,17 @@ namespace Restaurant_Management.DAO
 
             return conn.excuteReader(sql, sqlParameters);
         }
+
+        public DataTable getHT()
+        {
+            string sql =
+                "SELECT * " +
+                "FROM HETHONG " +
+                "JOIN LOAI_QUYEN " +
+                "ON HETHONG.MA_QUYEN = LOAI_QUYEN.MA_QUYEN ";
+
+            return conn.excuteReader(sql);
+        }
     }
 }
 

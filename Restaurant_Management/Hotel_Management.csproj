@@ -55,12 +55,24 @@
   <ItemGroup>
     <Compile Include="BUS\BOOK_ROOM.cs" />
     <Compile Include="BUS\LOGIN.cs" />
-    <Compile Include="BUS\MANAGE-KHACHHANG.cs" />
+    <Compile Include="BUS\MANAGE_DKPT.cs" />
+    <Compile Include="BUS\MANAGE_HOADON.cs" />
+    <Compile Include="BUS\MANAGE_KHACHHANG.cs" />
+    <Compile Include="BUS\MANAGE_NHANVIEN.cs" />
+    <Compile Include="BUS\MANAGE_PHIEUTHUEPHONG.cs" />
+    <Compile Include="BUS\MANAGE_QUYEN.cs" />
+    <Compile Include="BUS\MANAGE_ROOM.cs" />
     <Compile Include="DAO\DK_PHUTHU.cs" />
     <Compile Include="DAO\HETHONG.cs" />
+    <Compile Include="DAO\HOADON.cs" />
     <Compile Include="DAO\KHACHHANG.cs" />
     <Compile Include="DAO\LOAIKH.cs" />
+    <Compile Include="DAO\LOAIPHONG.cs" />
+    <Compile Include="DAO\LOAI_TT.cs" />
+    <Compile Include="DAO\NHANVIEN.cs" />
     <Compile Include="DAO\NHOM.cs" />
+    <Compile Include="DAO\NH_DK_PT.cs" />
+    <Compile Include="DAO\PHIEUTHUEPHONG.cs" />
     <Compile Include="DAO\PHONG.cs" />
     <Compile Include="GUI\components\bookRoom\Bang_Dat_Phong.cs">
       <SubType>Form</SubType>

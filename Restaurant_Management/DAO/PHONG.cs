@@ -31,5 +31,18 @@ namespace Restaurant_Management.DAO
 
             return conn.excuteReader(sql);
         }
+
+        public DataTable getPHONG_ALL()
+        {
+            string sql =
+                "SELECT MAPHONG, PHONG.MALOAI, TENLOAI, PHONG.MATT, TEN_TT, GHICHU " +
+                "FROM PHONG " +
+                "JOIN LOAI_TT " +
+                "ON PHONG.MATT = LOAI_TT.MATT " +
+                "JOIN LOAIPHONG " +
+                "ON PHONG.MALOAI = LOAIPHONG.MALOAI ";
+
+            return conn.excuteReader(sql);
+        }
     }
 }

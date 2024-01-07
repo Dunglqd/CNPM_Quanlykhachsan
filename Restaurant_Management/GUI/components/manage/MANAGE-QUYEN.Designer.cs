@@ -32,7 +32,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtvQUYEN = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -40,16 +40,16 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button14 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lbMA_QUYEN = new System.Windows.Forms.Label();
+            this.lbMANV = new System.Windows.Forms.Label();
+            this.lbPASSWORD = new System.Windows.Forms.Label();
+            this.lbUSERNAME = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvQUYEN)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,26 +107,27 @@
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dtvQUYEN
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtvQUYEN.AllowUserToAddRows = false;
+            this.dtvQUYEN.AllowUserToDeleteRows = false;
+            this.dtvQUYEN.AllowUserToOrderColumns = true;
+            this.dtvQUYEN.AllowUserToResizeColumns = false;
+            this.dtvQUYEN.AllowUserToResizeRows = false;
+            this.dtvQUYEN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(408, 92);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(359, 240);
-            this.dataGridView2.TabIndex = 63;
+            this.dtvQUYEN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvQUYEN.BackgroundColor = System.Drawing.Color.White;
+            this.dtvQUYEN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtvQUYEN.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtvQUYEN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvQUYEN.Location = new System.Drawing.Point(408, 92);
+            this.dtvQUYEN.Name = "dtvQUYEN";
+            this.dtvQUYEN.ReadOnly = true;
+            this.dtvQUYEN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvQUYEN.Size = new System.Drawing.Size(359, 240);
+            this.dtvQUYEN.TabIndex = 63;
+            this.dtvQUYEN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvQUYEN_CellClick);
             // 
             // button4
             // 
@@ -148,10 +149,10 @@
             this.panel15.Controls.Add(this.panel2);
             this.panel15.Controls.Add(this.panel1);
             this.panel15.Controls.Add(this.button14);
-            this.panel15.Controls.Add(this.label28);
-            this.panel15.Controls.Add(this.label27);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.label25);
+            this.panel15.Controls.Add(this.lbMA_QUYEN);
+            this.panel15.Controls.Add(this.lbMANV);
+            this.panel15.Controls.Add(this.lbPASSWORD);
+            this.panel15.Controls.Add(this.lbUSERNAME);
             this.panel15.Controls.Add(this.button13);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
@@ -207,53 +208,53 @@
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // label28
+            // lbMA_QUYEN
             // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label28.Location = new System.Drawing.Point(299, 223);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(22, 17);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "12";
+            this.lbMA_QUYEN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbMA_QUYEN.AutoSize = true;
+            this.lbMA_QUYEN.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMA_QUYEN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbMA_QUYEN.Location = new System.Drawing.Point(299, 223);
+            this.lbMA_QUYEN.Name = "lbMA_QUYEN";
+            this.lbMA_QUYEN.Size = new System.Drawing.Size(22, 17);
+            this.lbMA_QUYEN.TabIndex = 1;
+            this.lbMA_QUYEN.Text = "12";
             // 
-            // label27
+            // lbMANV
             // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label27.Location = new System.Drawing.Point(299, 175);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(22, 17);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "04";
+            this.lbMANV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbMANV.AutoSize = true;
+            this.lbMANV.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMANV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbMANV.Location = new System.Drawing.Point(299, 175);
+            this.lbMANV.Name = "lbMANV";
+            this.lbMANV.Size = new System.Drawing.Size(22, 17);
+            this.lbMANV.TabIndex = 1;
+            this.lbMANV.Text = "04";
             // 
-            // label26
+            // lbPASSWORD
             // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label26.Location = new System.Drawing.Point(299, 125);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(22, 17);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "05";
+            this.lbPASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbPASSWORD.AutoSize = true;
+            this.lbPASSWORD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPASSWORD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbPASSWORD.Location = new System.Drawing.Point(299, 125);
+            this.lbPASSWORD.Name = "lbPASSWORD";
+            this.lbPASSWORD.Size = new System.Drawing.Size(22, 17);
+            this.lbPASSWORD.TabIndex = 1;
+            this.lbPASSWORD.Text = "05";
             // 
-            // label25
+            // lbUSERNAME
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label25.Location = new System.Drawing.Point(299, 79);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 17);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "02";
+            this.lbUSERNAME.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbUSERNAME.AutoSize = true;
+            this.lbUSERNAME.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUSERNAME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.lbUSERNAME.Location = new System.Drawing.Point(299, 79);
+            this.lbUSERNAME.Name = "lbUSERNAME";
+            this.lbUSERNAME.Size = new System.Drawing.Size(22, 17);
+            this.lbUSERNAME.TabIndex = 1;
+            this.lbUSERNAME.Text = "02";
             // 
             // button13
             // 
@@ -332,14 +333,15 @@
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dtvQUYEN);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.button15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MANAGE_QUYEN";
             this.Text = "MANAGE_QUYEN";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Shown += new System.EventHandler(this.MANAGE_QUYEN_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.dtvQUYEN)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.ResumeLayout(false);
@@ -352,7 +354,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtvQUYEN;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel4;
@@ -360,10 +362,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lbMA_QUYEN;
+        private System.Windows.Forms.Label lbMANV;
+        private System.Windows.Forms.Label lbPASSWORD;
+        private System.Windows.Forms.Label lbUSERNAME;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
