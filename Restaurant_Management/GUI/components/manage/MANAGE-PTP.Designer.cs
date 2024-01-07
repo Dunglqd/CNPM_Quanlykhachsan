@@ -30,34 +30,34 @@
         {
             this.btnSearch = new System.Windows.Forms.Button();
             this.dtvPTP = new System.Windows.Forms.DataGridView();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.lbMAKH = new System.Windows.Forms.Label();
-            this.lbMANV = new System.Windows.Forms.Label();
-            this.lbTYLE = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.lbNGBD = new System.Windows.Forms.Label();
-            this.lbMAPHONG = new System.Windows.Forms.Label();
-            this.lbMANHOM = new System.Windows.Forms.Label();
-            this.lbMAPT = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.btnDeSelect = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.BOX_MAPHIEUTHUE = new System.Windows.Forms.TextBox();
+            this.BOX_MANHOM = new System.Windows.Forms.TextBox();
+            this.BOX_MAPHONG = new System.Windows.Forms.TextBox();
+            this.BOX_NGAYDAT = new System.Windows.Forms.TextBox();
+            this.BOX_TYLE = new System.Windows.Forms.TextBox();
+            this.BOX_MANHANVIEN = new System.Windows.Forms.TextBox();
+            this.BOX_MAKHACHHANG = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPTP)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
@@ -95,292 +95,6 @@
             this.dtvPTP.Size = new System.Drawing.Size(382, 467);
             this.dtvPTP.TabIndex = 51;
             this.dtvPTP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvPTP_CellClick);
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel15.Controls.Add(this.lbMAKH);
-            this.panel15.Controls.Add(this.lbMANV);
-            this.panel15.Controls.Add(this.lbTYLE);
-            this.panel15.Controls.Add(this.panel8);
-            this.panel15.Controls.Add(this.panel7);
-            this.panel15.Controls.Add(this.panel5);
-            this.panel15.Controls.Add(this.panel4);
-            this.panel15.Controls.Add(this.panel3);
-            this.panel15.Controls.Add(this.panel2);
-            this.panel15.Controls.Add(this.panel1);
-            this.panel15.Controls.Add(this.button4);
-            this.panel15.Controls.Add(this.button3);
-            this.panel15.Controls.Add(this.button2);
-            this.panel15.Controls.Add(this.button14);
-            this.panel15.Controls.Add(this.lbNGBD);
-            this.panel15.Controls.Add(this.lbMAPHONG);
-            this.panel15.Controls.Add(this.lbMANHOM);
-            this.panel15.Controls.Add(this.lbMAPT);
-            this.panel15.Controls.Add(this.button13);
-            this.panel15.Controls.Add(this.button12);
-            this.panel15.Controls.Add(this.button11);
-            this.panel15.Controls.Add(this.label24);
-            this.panel15.Location = new System.Drawing.Point(402, 103);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(417, 467);
-            this.panel15.TabIndex = 50;
-            // 
-            // lbMAKH
-            // 
-            this.lbMAKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMAKH.AutoSize = true;
-            this.lbMAKH.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMAKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMAKH.Location = new System.Drawing.Point(365, 407);
-            this.lbMAKH.Name = "lbMAKH";
-            this.lbMAKH.Size = new System.Drawing.Size(22, 17);
-            this.lbMAKH.TabIndex = 21;
-            this.lbMAKH.Text = "02";
-            // 
-            // lbMANV
-            // 
-            this.lbMANV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMANV.AutoSize = true;
-            this.lbMANV.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMANV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMANV.Location = new System.Drawing.Point(365, 359);
-            this.lbMANV.Name = "lbMANV";
-            this.lbMANV.Size = new System.Drawing.Size(22, 17);
-            this.lbMANV.TabIndex = 20;
-            this.lbMANV.Text = "02";
-            // 
-            // lbTYLE
-            // 
-            this.lbTYLE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTYLE.AutoSize = true;
-            this.lbTYLE.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTYLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbTYLE.Location = new System.Drawing.Point(365, 293);
-            this.lbTYLE.Name = "lbTYLE";
-            this.lbTYLE.Size = new System.Drawing.Size(22, 17);
-            this.lbTYLE.TabIndex = 18;
-            this.lbTYLE.Text = "02";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel8.Location = new System.Drawing.Point(200, 435);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(300, 1);
-            this.panel8.TabIndex = 17;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel7.Location = new System.Drawing.Point(300, 387);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 1);
-            this.panel7.TabIndex = 16;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel5.Location = new System.Drawing.Point(300, 321);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 1);
-            this.panel5.TabIndex = 14;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel4.Location = new System.Drawing.Point(200, 251);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 1);
-            this.panel4.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel3.Location = new System.Drawing.Point(300, 203);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1);
-            this.panel3.TabIndex = 12;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel2.Location = new System.Drawing.Point(200, 155);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 1);
-            this.panel2.TabIndex = 11;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel1.Location = new System.Drawing.Point(300, 107);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 1);
-            this.panel1.TabIndex = 10;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button4.Image = global::Restaurant_Management.Properties.Resources.user__1_;
-            this.button4.Location = new System.Drawing.Point(17, 402);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 42);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "   MÃ KHÁCH HÀNG";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button3.Image = global::Restaurant_Management.Properties.Resources.user__1_;
-            this.button3.Location = new System.Drawing.Point(17, 346);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 42);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "     MÃ NHÂN VIÊN";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button2.Image = global::Restaurant_Management.Properties.Resources.user__1_;
-            this.button2.Location = new System.Drawing.Point(17, 290);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 42);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "        TỶ LỆ";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button14.Image = global::Restaurant_Management.Properties.Resources.waiter;
-            this.button14.Location = new System.Drawing.Point(17, 234);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(200, 42);
-            this.button14.TabIndex = 5;
-            this.button14.Text = "    NGÀY ĐẶT";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // lbNGBD
-            // 
-            this.lbNGBD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbNGBD.AutoSize = true;
-            this.lbNGBD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNGBD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbNGBD.Location = new System.Drawing.Point(365, 223);
-            this.lbNGBD.Name = "lbNGBD";
-            this.lbNGBD.Size = new System.Drawing.Size(22, 17);
-            this.lbNGBD.TabIndex = 1;
-            this.lbNGBD.Text = "12";
-            // 
-            // lbMAPHONG
-            // 
-            this.lbMAPHONG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMAPHONG.AutoSize = true;
-            this.lbMAPHONG.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMAPHONG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMAPHONG.Location = new System.Drawing.Point(365, 175);
-            this.lbMAPHONG.Name = "lbMAPHONG";
-            this.lbMAPHONG.Size = new System.Drawing.Size(22, 17);
-            this.lbMAPHONG.TabIndex = 1;
-            this.lbMAPHONG.Text = "04";
-            // 
-            // lbMANHOM
-            // 
-            this.lbMANHOM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMANHOM.AutoSize = true;
-            this.lbMANHOM.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMANHOM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMANHOM.Location = new System.Drawing.Point(365, 125);
-            this.lbMANHOM.Name = "lbMANHOM";
-            this.lbMANHOM.Size = new System.Drawing.Size(22, 17);
-            this.lbMANHOM.TabIndex = 1;
-            this.lbMANHOM.Text = "05";
-            // 
-            // lbMAPT
-            // 
-            this.lbMAPT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMAPT.AutoSize = true;
-            this.lbMAPT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMAPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMAPT.Location = new System.Drawing.Point(365, 79);
-            this.lbMAPT.Name = "lbMAPT";
-            this.lbMAPT.Size = new System.Drawing.Size(22, 17);
-            this.lbMAPT.TabIndex = 1;
-            this.lbMAPT.Text = "02";
-            // 
-            // button13
-            // 
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button13.Image = global::Restaurant_Management.Properties.Resources.pan;
-            this.button13.Location = new System.Drawing.Point(17, 178);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(200, 42);
-            this.button13.TabIndex = 5;
-            this.button13.Text = "     MÃ PHÒNG";
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button12.Image = global::Restaurant_Management.Properties.Resources.chef;
-            this.button12.Location = new System.Drawing.Point(17, 122);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(200, 42);
-            this.button12.TabIndex = 5;
-            this.button12.Text = "     MÃ NHÓM";
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
-            this.button11.Image = global::Restaurant_Management.Properties.Resources.user__1_;
-            this.button11.Location = new System.Drawing.Point(17, 66);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(200, 42);
-            this.button11.TabIndex = 5;
-            this.button11.Text = "     MÃ PHIẾU THUÊ";
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.label24.Location = new System.Drawing.Point(13, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(239, 20);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "THÔNG TIN THUÊ PHÒNG";
             // 
             // button15
             // 
@@ -450,6 +164,306 @@
             this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button16.UseVisualStyleBackColor = false;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
+            this.label24.Location = new System.Drawing.Point(13, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(239, 20);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "THÔNG TIN THUÊ PHÒNG";
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button11.Image = global::Restaurant_Management.Properties.Resources.user__1_;
+            this.button11.Location = new System.Drawing.Point(17, 66);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(200, 42);
+            this.button11.TabIndex = 5;
+            this.button11.Text = "     MÃ PHIẾU THUÊ";
+            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button12.Image = global::Restaurant_Management.Properties.Resources.chef;
+            this.button12.Location = new System.Drawing.Point(17, 122);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(200, 42);
+            this.button12.TabIndex = 5;
+            this.button12.Text = "     MÃ NHÓM";
+            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button13.Image = global::Restaurant_Management.Properties.Resources.pan;
+            this.button13.Location = new System.Drawing.Point(17, 178);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(200, 42);
+            this.button13.TabIndex = 5;
+            this.button13.Text = "     MÃ PHÒNG";
+            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button14.Image = global::Restaurant_Management.Properties.Resources.waiter;
+            this.button14.Location = new System.Drawing.Point(17, 234);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(200, 42);
+            this.button14.TabIndex = 5;
+            this.button14.Text = "    NGÀY ĐẶT";
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button2.Image = global::Restaurant_Management.Properties.Resources.user__1_;
+            this.button2.Location = new System.Drawing.Point(17, 290);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 42);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "        TỶ LỆ";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button3.Image = global::Restaurant_Management.Properties.Resources.user__1_;
+            this.button3.Location = new System.Drawing.Point(17, 346);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 42);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "     MÃ NHÂN VIÊN";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(124)))), ((int)(((byte)(146)))));
+            this.button4.Image = global::Restaurant_Management.Properties.Resources.user__1_;
+            this.button4.Location = new System.Drawing.Point(17, 402);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(200, 42);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "   MÃ KHÁCH HÀNG";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel1.Location = new System.Drawing.Point(300, 107);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel2.Location = new System.Drawing.Point(200, 155);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 1);
+            this.panel2.TabIndex = 11;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel3.Location = new System.Drawing.Point(300, 203);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel4.Location = new System.Drawing.Point(200, 263);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(300, 1);
+            this.panel4.TabIndex = 13;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel5.Location = new System.Drawing.Point(300, 321);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 1);
+            this.panel5.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel7.Location = new System.Drawing.Point(300, 387);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(200, 1);
+            this.panel7.TabIndex = 16;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel8.Location = new System.Drawing.Point(200, 435);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(300, 1);
+            this.panel8.TabIndex = 17;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.BOX_MAKHACHHANG);
+            this.panel15.Controls.Add(this.BOX_MANHANVIEN);
+            this.panel15.Controls.Add(this.BOX_TYLE);
+            this.panel15.Controls.Add(this.BOX_NGAYDAT);
+            this.panel15.Controls.Add(this.BOX_MAPHONG);
+            this.panel15.Controls.Add(this.BOX_MANHOM);
+            this.panel15.Controls.Add(this.BOX_MAPHIEUTHUE);
+            this.panel15.Controls.Add(this.panel8);
+            this.panel15.Controls.Add(this.panel7);
+            this.panel15.Controls.Add(this.panel5);
+            this.panel15.Controls.Add(this.panel4);
+            this.panel15.Controls.Add(this.panel3);
+            this.panel15.Controls.Add(this.panel2);
+            this.panel15.Controls.Add(this.panel1);
+            this.panel15.Controls.Add(this.button4);
+            this.panel15.Controls.Add(this.button3);
+            this.panel15.Controls.Add(this.button2);
+            this.panel15.Controls.Add(this.button14);
+            this.panel15.Controls.Add(this.button13);
+            this.panel15.Controls.Add(this.button12);
+            this.panel15.Controls.Add(this.button11);
+            this.panel15.Controls.Add(this.label24);
+            this.panel15.Location = new System.Drawing.Point(402, 103);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(417, 467);
+            this.panel15.TabIndex = 50;
+            // 
+            // BOX_MAPHIEUTHUE
+            // 
+            this.BOX_MAPHIEUTHUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MAPHIEUTHUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MAPHIEUTHUE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MAPHIEUTHUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MAPHIEUTHUE.ForeColor = System.Drawing.Color.White;
+            this.BOX_MAPHIEUTHUE.Location = new System.Drawing.Point(323, 77);
+            this.BOX_MAPHIEUTHUE.Name = "BOX_MAPHIEUTHUE";
+            this.BOX_MAPHIEUTHUE.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MAPHIEUTHUE.TabIndex = 23;
+            this.BOX_MAPHIEUTHUE.Text = "01";
+            this.BOX_MAPHIEUTHUE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MANHOM
+            // 
+            this.BOX_MANHOM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MANHOM.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MANHOM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MANHOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MANHOM.ForeColor = System.Drawing.Color.White;
+            this.BOX_MANHOM.Location = new System.Drawing.Point(323, 130);
+            this.BOX_MANHOM.Name = "BOX_MANHOM";
+            this.BOX_MANHOM.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MANHOM.TabIndex = 24;
+            this.BOX_MANHOM.Text = "01";
+            this.BOX_MANHOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MAPHONG
+            // 
+            this.BOX_MAPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MAPHONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MAPHONG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MAPHONG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MAPHONG.ForeColor = System.Drawing.Color.White;
+            this.BOX_MAPHONG.Location = new System.Drawing.Point(323, 178);
+            this.BOX_MAPHONG.Name = "BOX_MAPHONG";
+            this.BOX_MAPHONG.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MAPHONG.TabIndex = 25;
+            this.BOX_MAPHONG.Text = "01";
+            this.BOX_MAPHONG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_NGAYDAT
+            // 
+            this.BOX_NGAYDAT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_NGAYDAT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_NGAYDAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_NGAYDAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_NGAYDAT.ForeColor = System.Drawing.Color.White;
+            this.BOX_NGAYDAT.Location = new System.Drawing.Point(323, 238);
+            this.BOX_NGAYDAT.Name = "BOX_NGAYDAT";
+            this.BOX_NGAYDAT.Size = new System.Drawing.Size(91, 19);
+            this.BOX_NGAYDAT.TabIndex = 26;
+            this.BOX_NGAYDAT.Text = "01";
+            this.BOX_NGAYDAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_TYLE
+            // 
+            this.BOX_TYLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_TYLE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_TYLE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_TYLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_TYLE.ForeColor = System.Drawing.Color.White;
+            this.BOX_TYLE.Location = new System.Drawing.Point(323, 296);
+            this.BOX_TYLE.Name = "BOX_TYLE";
+            this.BOX_TYLE.Size = new System.Drawing.Size(91, 19);
+            this.BOX_TYLE.TabIndex = 27;
+            this.BOX_TYLE.Text = "01";
+            this.BOX_TYLE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MANHANVIEN
+            // 
+            this.BOX_MANHANVIEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MANHANVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MANHANVIEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MANHANVIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MANHANVIEN.ForeColor = System.Drawing.Color.White;
+            this.BOX_MANHANVIEN.Location = new System.Drawing.Point(326, 357);
+            this.BOX_MANHANVIEN.Name = "BOX_MANHANVIEN";
+            this.BOX_MANHANVIEN.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MANHANVIEN.TabIndex = 28;
+            this.BOX_MANHANVIEN.Text = "01";
+            this.BOX_MANHANVIEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MAKHACHHANG
+            // 
+            this.BOX_MAKHACHHANG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MAKHACHHANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MAKHACHHANG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MAKHACHHANG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MAKHACHHANG.ForeColor = System.Drawing.Color.White;
+            this.BOX_MAKHACHHANG.Location = new System.Drawing.Point(323, 413);
+            this.BOX_MAKHACHHANG.Name = "BOX_MAKHACHHANG";
+            this.BOX_MAKHACHHANG.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MAKHACHHANG.TabIndex = 29;
+            this.BOX_MAKHACHHANG.Text = "01";
+            this.BOX_MAKHACHHANG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MANAGE_PTP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,33 +493,33 @@
 
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dtvPTP;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label lbMAKH;
-        private System.Windows.Forms.Label lbMANV;
-        private System.Windows.Forms.Label lbTYLE;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label lbNGBD;
-        private System.Windows.Forms.Label lbMAPHONG;
-        private System.Windows.Forms.Label lbMANHOM;
-        private System.Windows.Forms.Label lbMAPT;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnDeSelect;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.TextBox BOX_MAKHACHHANG;
+        private System.Windows.Forms.TextBox BOX_MANHANVIEN;
+        private System.Windows.Forms.TextBox BOX_TYLE;
+        private System.Windows.Forms.TextBox BOX_NGAYDAT;
+        private System.Windows.Forms.TextBox BOX_MAPHONG;
+        private System.Windows.Forms.TextBox BOX_MANHOM;
+        private System.Windows.Forms.TextBox BOX_MAPHIEUTHUE;
     }
 }

@@ -69,5 +69,10 @@ namespace Restaurant_Management
         {
             dtvPTP.ClearSelection();
         }
+
+        private void lbMAPT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

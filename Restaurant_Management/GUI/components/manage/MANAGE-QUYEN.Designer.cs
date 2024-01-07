@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnDeSelect = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.DELETE = new System.Windows.Forms.Button();
+            this.FIX = new System.Windows.Forms.Button();
+            this.ADD = new System.Windows.Forms.Button();
             this.dtvQUYEN = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -40,15 +40,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button14 = new System.Windows.Forms.Button();
-            this.lbMA_QUYEN = new System.Windows.Forms.Label();
-            this.lbMANV = new System.Windows.Forms.Label();
-            this.lbPASSWORD = new System.Windows.Forms.Label();
-            this.lbUSERNAME = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
+            this.BOX_USERNAME = new System.Windows.Forms.TextBox();
+            this.BOX_PASSWORD = new System.Windows.Forms.TextBox();
+            this.BOX_MANV = new System.Windows.Forms.TextBox();
+            this.BOX_MAQUYEN = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvQUYEN)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
@@ -65,47 +65,47 @@
             this.btnDeSelect.Text = "Bỏ chọn";
             this.btnDeSelect.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // DELETE
             // 
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.Location = new System.Drawing.Point(408, 363);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(154, 42);
-            this.button18.TabIndex = 64;
-            this.button18.Text = "XÓA";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
+            this.DELETE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.DELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DELETE.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELETE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.DELETE.Location = new System.Drawing.Point(408, 363);
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Size = new System.Drawing.Size(154, 42);
+            this.DELETE.TabIndex = 64;
+            this.DELETE.Text = "XÓA";
+            this.DELETE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.DELETE.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // FIX
             // 
-            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.Location = new System.Drawing.Point(613, 363);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(154, 42);
-            this.button17.TabIndex = 65;
-            this.button17.Text = "SỬA";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
+            this.FIX.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.FIX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FIX.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FIX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.FIX.Location = new System.Drawing.Point(613, 363);
+            this.FIX.Name = "FIX";
+            this.FIX.Size = new System.Drawing.Size(154, 42);
+            this.FIX.TabIndex = 65;
+            this.FIX.Text = "SỬA";
+            this.FIX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.FIX.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // ADD
             // 
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.Location = new System.Drawing.Point(408, 439);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(154, 42);
-            this.button16.TabIndex = 66;
-            this.button16.Text = "THÊM";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
+            this.ADD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.ADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ADD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.ADD.Location = new System.Drawing.Point(408, 439);
+            this.ADD.Name = "ADD";
+            this.ADD.Size = new System.Drawing.Size(154, 42);
+            this.ADD.TabIndex = 66;
+            this.ADD.Text = "THÊM";
+            this.ADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ADD.UseVisualStyleBackColor = false;
             // 
             // dtvQUYEN
             // 
@@ -144,15 +144,15 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.BOX_MAQUYEN);
+            this.panel15.Controls.Add(this.BOX_MANV);
+            this.panel15.Controls.Add(this.BOX_PASSWORD);
+            this.panel15.Controls.Add(this.BOX_USERNAME);
             this.panel15.Controls.Add(this.panel4);
             this.panel15.Controls.Add(this.panel3);
             this.panel15.Controls.Add(this.panel2);
             this.panel15.Controls.Add(this.panel1);
             this.panel15.Controls.Add(this.button14);
-            this.panel15.Controls.Add(this.lbMA_QUYEN);
-            this.panel15.Controls.Add(this.lbMANV);
-            this.panel15.Controls.Add(this.lbPASSWORD);
-            this.panel15.Controls.Add(this.lbUSERNAME);
             this.panel15.Controls.Add(this.button13);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
@@ -161,6 +161,7 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(351, 290);
             this.panel15.TabIndex = 61;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
             // panel4
             // 
@@ -207,54 +208,6 @@
             this.button14.Text = "MÃ QUYỀN";
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button14.UseVisualStyleBackColor = true;
-            // 
-            // lbMA_QUYEN
-            // 
-            this.lbMA_QUYEN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMA_QUYEN.AutoSize = true;
-            this.lbMA_QUYEN.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMA_QUYEN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMA_QUYEN.Location = new System.Drawing.Point(299, 223);
-            this.lbMA_QUYEN.Name = "lbMA_QUYEN";
-            this.lbMA_QUYEN.Size = new System.Drawing.Size(22, 17);
-            this.lbMA_QUYEN.TabIndex = 1;
-            this.lbMA_QUYEN.Text = "12";
-            // 
-            // lbMANV
-            // 
-            this.lbMANV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMANV.AutoSize = true;
-            this.lbMANV.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMANV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMANV.Location = new System.Drawing.Point(299, 175);
-            this.lbMANV.Name = "lbMANV";
-            this.lbMANV.Size = new System.Drawing.Size(22, 17);
-            this.lbMANV.TabIndex = 1;
-            this.lbMANV.Text = "04";
-            // 
-            // lbPASSWORD
-            // 
-            this.lbPASSWORD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbPASSWORD.AutoSize = true;
-            this.lbPASSWORD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPASSWORD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbPASSWORD.Location = new System.Drawing.Point(299, 125);
-            this.lbPASSWORD.Name = "lbPASSWORD";
-            this.lbPASSWORD.Size = new System.Drawing.Size(22, 17);
-            this.lbPASSWORD.TabIndex = 1;
-            this.lbPASSWORD.Text = "05";
-            // 
-            // lbUSERNAME
-            // 
-            this.lbUSERNAME.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbUSERNAME.AutoSize = true;
-            this.lbUSERNAME.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUSERNAME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbUSERNAME.Location = new System.Drawing.Point(299, 79);
-            this.lbUSERNAME.Name = "lbUSERNAME";
-            this.lbUSERNAME.Size = new System.Drawing.Size(22, 17);
-            this.lbUSERNAME.TabIndex = 1;
-            this.lbUSERNAME.Text = "02";
             // 
             // button13
             // 
@@ -323,6 +276,62 @@
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
             // 
+            // BOX_USERNAME
+            // 
+            this.BOX_USERNAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_USERNAME.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_USERNAME.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_USERNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_USERNAME.ForeColor = System.Drawing.Color.White;
+            this.BOX_USERNAME.Location = new System.Drawing.Point(260, 77);
+            this.BOX_USERNAME.Name = "BOX_USERNAME";
+            this.BOX_USERNAME.Size = new System.Drawing.Size(91, 19);
+            this.BOX_USERNAME.TabIndex = 23;
+            this.BOX_USERNAME.Text = "01";
+            this.BOX_USERNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_PASSWORD
+            // 
+            this.BOX_PASSWORD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_PASSWORD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_PASSWORD.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_PASSWORD.ForeColor = System.Drawing.Color.White;
+            this.BOX_PASSWORD.Location = new System.Drawing.Point(260, 125);
+            this.BOX_PASSWORD.Name = "BOX_PASSWORD";
+            this.BOX_PASSWORD.Size = new System.Drawing.Size(91, 19);
+            this.BOX_PASSWORD.TabIndex = 24;
+            this.BOX_PASSWORD.Text = "01";
+            this.BOX_PASSWORD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MANV
+            // 
+            this.BOX_MANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MANV.ForeColor = System.Drawing.Color.White;
+            this.BOX_MANV.Location = new System.Drawing.Point(260, 173);
+            this.BOX_MANV.Name = "BOX_MANV";
+            this.BOX_MANV.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MANV.TabIndex = 25;
+            this.BOX_MANV.Text = "01";
+            this.BOX_MANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MAQUYEN
+            // 
+            this.BOX_MAQUYEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MAQUYEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MAQUYEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MAQUYEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MAQUYEN.ForeColor = System.Drawing.Color.White;
+            this.BOX_MAQUYEN.Location = new System.Drawing.Point(260, 221);
+            this.BOX_MAQUYEN.Name = "BOX_MAQUYEN";
+            this.BOX_MAQUYEN.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MAQUYEN.TabIndex = 26;
+            this.BOX_MAQUYEN.Text = "01";
+            this.BOX_MAQUYEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MANAGE_QUYEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,9 +339,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(800, 542);
             this.Controls.Add(this.btnDeSelect);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.DELETE);
+            this.Controls.Add(this.FIX);
+            this.Controls.Add(this.ADD);
             this.Controls.Add(this.dtvQUYEN);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel15);
@@ -351,9 +360,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnDeSelect;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button DELETE;
+        private System.Windows.Forms.Button FIX;
+        private System.Windows.Forms.Button ADD;
         private System.Windows.Forms.DataGridView dtvQUYEN;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel15;
@@ -362,14 +371,14 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label lbMA_QUYEN;
-        private System.Windows.Forms.Label lbMANV;
-        private System.Windows.Forms.Label lbPASSWORD;
-        private System.Windows.Forms.Label lbUSERNAME;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TextBox BOX_MAQUYEN;
+        private System.Windows.Forms.TextBox BOX_MANV;
+        private System.Windows.Forms.TextBox BOX_PASSWORD;
+        private System.Windows.Forms.TextBox BOX_USERNAME;
     }
 }

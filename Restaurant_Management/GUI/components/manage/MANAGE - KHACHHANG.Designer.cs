@@ -31,20 +31,15 @@
             this.dtvNH_PT = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.lbPT = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbSL = new System.Windows.Forms.Label();
-            this.lbMAPT = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbTENLOAI = new System.Windows.Forms.Label();
-            this.lbMALOAI = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,23 +48,28 @@
             this.button15 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.lbDC = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.lbCMND = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.lbTENKH = new System.Windows.Forms.Label();
-            this.lbMAKH = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.btnDeSelect = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.DELETE = new System.Windows.Forms.Button();
+            this.FIX = new System.Windows.Forms.Button();
+            this.ADD = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.BOX_MAKH = new System.Windows.Forms.TextBox();
+            this.BOX_TENKH = new System.Windows.Forms.TextBox();
+            this.BOX_CMND = new System.Windows.Forms.TextBox();
+            this.BOX_DIACHI = new System.Windows.Forms.TextBox();
+            this.BOX_MALOAI = new System.Windows.Forms.TextBox();
+            this.BOX_TENLOAI = new System.Windows.Forms.TextBox();
+            this.BOX_MADK = new System.Windows.Forms.TextBox();
+            this.BOX_SLDK = new System.Windows.Forms.TextBox();
+            this.BOX_DKPT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvNH_PT)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -103,13 +103,13 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel4.Controls.Add(this.BOX_DKPT);
+            this.panel4.Controls.Add(this.BOX_SLDK);
+            this.panel4.Controls.Add(this.BOX_MADK);
             this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.lbPT);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.lbSL);
-            this.panel4.Controls.Add(this.lbMAPT);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.label6);
@@ -125,18 +125,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 1);
             this.panel7.TabIndex = 14;
-            // 
-            // lbPT
-            // 
-            this.lbPT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbPT.AutoSize = true;
-            this.lbPT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbPT.Location = new System.Drawing.Point(398, 173);
-            this.lbPT.Name = "lbPT";
-            this.lbPT.Size = new System.Drawing.Size(22, 17);
-            this.lbPT.TabIndex = 12;
-            this.lbPT.Text = "05";
             // 
             // button5
             // 
@@ -166,30 +154,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 1);
             this.panel6.TabIndex = 10;
-            // 
-            // lbSL
-            // 
-            this.lbSL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbSL.AutoSize = true;
-            this.lbSL.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbSL.Location = new System.Drawing.Point(398, 125);
-            this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(22, 17);
-            this.lbSL.TabIndex = 1;
-            this.lbSL.Text = "05";
-            // 
-            // lbMAPT
-            // 
-            this.lbMAPT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMAPT.AutoSize = true;
-            this.lbMAPT.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMAPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMAPT.Location = new System.Drawing.Point(398, 79);
-            this.lbMAPT.Name = "lbMAPT";
-            this.lbMAPT.Size = new System.Drawing.Size(22, 17);
-            this.lbMAPT.TabIndex = 1;
-            this.lbMAPT.Text = "02";
             // 
             // button3
             // 
@@ -232,10 +196,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.BOX_TENLOAI);
+            this.panel1.Controls.Add(this.BOX_MALOAI);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.lbTENLOAI);
-            this.panel1.Controls.Add(this.lbMALOAI);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
@@ -259,30 +223,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 1);
             this.panel3.TabIndex = 10;
-            // 
-            // lbTENLOAI
-            // 
-            this.lbTENLOAI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTENLOAI.AutoSize = true;
-            this.lbTENLOAI.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTENLOAI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbTENLOAI.Location = new System.Drawing.Point(398, 125);
-            this.lbTENLOAI.Name = "lbTENLOAI";
-            this.lbTENLOAI.Size = new System.Drawing.Size(22, 17);
-            this.lbTENLOAI.TabIndex = 1;
-            this.lbTENLOAI.Text = "05";
-            // 
-            // lbMALOAI
-            // 
-            this.lbMALOAI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMALOAI.AutoSize = true;
-            this.lbMALOAI.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMALOAI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMALOAI.Location = new System.Drawing.Point(398, 79);
-            this.lbMALOAI.Name = "lbMALOAI";
-            this.lbMALOAI.Size = new System.Drawing.Size(22, 17);
-            this.lbMALOAI.TabIndex = 1;
-            this.lbMALOAI.Text = "02";
             // 
             // button1
             // 
@@ -384,16 +324,16 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.BOX_DIACHI);
+            this.panel15.Controls.Add(this.BOX_CMND);
+            this.panel15.Controls.Add(this.BOX_TENKH);
+            this.panel15.Controls.Add(this.BOX_MAKH);
             this.panel15.Controls.Add(this.panel11);
-            this.panel15.Controls.Add(this.lbDC);
             this.panel15.Controls.Add(this.button7);
             this.panel15.Controls.Add(this.panel10);
-            this.panel15.Controls.Add(this.lbCMND);
             this.panel15.Controls.Add(this.button6);
             this.panel15.Controls.Add(this.panel8);
             this.panel15.Controls.Add(this.panel9);
-            this.panel15.Controls.Add(this.lbTENKH);
-            this.panel15.Controls.Add(this.lbMAKH);
             this.panel15.Controls.Add(this.button12);
             this.panel15.Controls.Add(this.button11);
             this.panel15.Controls.Add(this.label24);
@@ -409,18 +349,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(300, 1);
             this.panel11.TabIndex = 17;
-            // 
-            // lbDC
-            // 
-            this.lbDC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbDC.AutoSize = true;
-            this.lbDC.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbDC.Location = new System.Drawing.Point(398, 223);
-            this.lbDC.Name = "lbDC";
-            this.lbDC.Size = new System.Drawing.Size(22, 17);
-            this.lbDC.TabIndex = 15;
-            this.lbDC.Text = "05";
             // 
             // button7
             // 
@@ -442,18 +370,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 1);
             this.panel10.TabIndex = 14;
-            // 
-            // lbCMND
-            // 
-            this.lbCMND.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbCMND.AutoSize = true;
-            this.lbCMND.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCMND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbCMND.Location = new System.Drawing.Point(398, 175);
-            this.lbCMND.Name = "lbCMND";
-            this.lbCMND.Size = new System.Drawing.Size(22, 17);
-            this.lbCMND.TabIndex = 12;
-            this.lbCMND.Text = "02";
             // 
             // button6
             // 
@@ -484,30 +400,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 1);
             this.panel9.TabIndex = 10;
-            // 
-            // lbTENKH
-            // 
-            this.lbTENKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTENKH.AutoSize = true;
-            this.lbTENKH.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTENKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbTENKH.Location = new System.Drawing.Point(398, 125);
-            this.lbTENKH.Name = "lbTENKH";
-            this.lbTENKH.Size = new System.Drawing.Size(22, 17);
-            this.lbTENKH.TabIndex = 1;
-            this.lbTENKH.Text = "05";
-            // 
-            // lbMAKH
-            // 
-            this.lbMAKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMAKH.AutoSize = true;
-            this.lbMAKH.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMAKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMAKH.Location = new System.Drawing.Point(398, 79);
-            this.lbMAKH.Name = "lbMAKH";
-            this.lbMAKH.Size = new System.Drawing.Size(22, 17);
-            this.lbMAKH.TabIndex = 1;
-            this.lbMAKH.Text = "02";
             // 
             // button12
             // 
@@ -559,47 +451,47 @@
             this.btnDeSelect.Text = "Bỏ chọn";
             this.btnDeSelect.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // DELETE
             // 
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
-            this.button18.Location = new System.Drawing.Point(889, 218);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(154, 42);
-            this.button18.TabIndex = 60;
-            this.button18.Text = "XÓA";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
+            this.DELETE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.DELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DELETE.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELETE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(89)))));
+            this.DELETE.Location = new System.Drawing.Point(889, 218);
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Size = new System.Drawing.Size(154, 42);
+            this.DELETE.TabIndex = 60;
+            this.DELETE.Text = "XÓA";
+            this.DELETE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.DELETE.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // FIX
             // 
-            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
-            this.button17.Location = new System.Drawing.Point(889, 159);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(154, 42);
-            this.button17.TabIndex = 61;
-            this.button17.Text = "SỬA";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
+            this.FIX.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.FIX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FIX.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FIX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(190)))), ((int)(((byte)(240)))));
+            this.FIX.Location = new System.Drawing.Point(889, 159);
+            this.FIX.Name = "FIX";
+            this.FIX.Size = new System.Drawing.Size(154, 42);
+            this.FIX.TabIndex = 61;
+            this.FIX.Text = "SỬA";
+            this.FIX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.FIX.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // ADD
             // 
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
-            this.button16.Location = new System.Drawing.Point(889, 98);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(154, 42);
-            this.button16.TabIndex = 62;
-            this.button16.Text = "THÊM";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
+            this.ADD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.ADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ADD.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(99)))), ((int)(((byte)(135)))));
+            this.ADD.Location = new System.Drawing.Point(889, 98);
+            this.ADD.Name = "ADD";
+            this.ADD.Size = new System.Drawing.Size(154, 42);
+            this.ADD.TabIndex = 62;
+            this.ADD.Text = "THÊM";
+            this.ADD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ADD.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -613,6 +505,132 @@
             this.button8.Text = "TÌM KIẾM";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // BOX_MAKH
+            // 
+            this.BOX_MAKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MAKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MAKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MAKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MAKH.ForeColor = System.Drawing.Color.White;
+            this.BOX_MAKH.Location = new System.Drawing.Point(359, 77);
+            this.BOX_MAKH.Name = "BOX_MAKH";
+            this.BOX_MAKH.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MAKH.TabIndex = 23;
+            this.BOX_MAKH.Text = "01";
+            this.BOX_MAKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_TENKH
+            // 
+            this.BOX_TENKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_TENKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_TENKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_TENKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_TENKH.ForeColor = System.Drawing.Color.White;
+            this.BOX_TENKH.Location = new System.Drawing.Point(359, 125);
+            this.BOX_TENKH.Name = "BOX_TENKH";
+            this.BOX_TENKH.Size = new System.Drawing.Size(91, 19);
+            this.BOX_TENKH.TabIndex = 24;
+            this.BOX_TENKH.Text = "01";
+            this.BOX_TENKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_CMND
+            // 
+            this.BOX_CMND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_CMND.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_CMND.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_CMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_CMND.ForeColor = System.Drawing.Color.White;
+            this.BOX_CMND.Location = new System.Drawing.Point(359, 173);
+            this.BOX_CMND.Name = "BOX_CMND";
+            this.BOX_CMND.Size = new System.Drawing.Size(91, 19);
+            this.BOX_CMND.TabIndex = 25;
+            this.BOX_CMND.Text = "01";
+            this.BOX_CMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_DIACHI
+            // 
+            this.BOX_DIACHI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_DIACHI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_DIACHI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_DIACHI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_DIACHI.ForeColor = System.Drawing.Color.White;
+            this.BOX_DIACHI.Location = new System.Drawing.Point(359, 221);
+            this.BOX_DIACHI.Name = "BOX_DIACHI";
+            this.BOX_DIACHI.Size = new System.Drawing.Size(91, 19);
+            this.BOX_DIACHI.TabIndex = 26;
+            this.BOX_DIACHI.Text = "01";
+            this.BOX_DIACHI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MALOAI
+            // 
+            this.BOX_MALOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MALOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MALOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MALOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MALOAI.ForeColor = System.Drawing.Color.White;
+            this.BOX_MALOAI.Location = new System.Drawing.Point(356, 77);
+            this.BOX_MALOAI.Name = "BOX_MALOAI";
+            this.BOX_MALOAI.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MALOAI.TabIndex = 23;
+            this.BOX_MALOAI.Text = "01";
+            this.BOX_MALOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_TENLOAI
+            // 
+            this.BOX_TENLOAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_TENLOAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_TENLOAI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_TENLOAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_TENLOAI.ForeColor = System.Drawing.Color.White;
+            this.BOX_TENLOAI.Location = new System.Drawing.Point(356, 125);
+            this.BOX_TENLOAI.Name = "BOX_TENLOAI";
+            this.BOX_TENLOAI.Size = new System.Drawing.Size(91, 19);
+            this.BOX_TENLOAI.TabIndex = 24;
+            this.BOX_TENLOAI.Text = "01";
+            this.BOX_TENLOAI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_MADK
+            // 
+            this.BOX_MADK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MADK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MADK.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MADK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MADK.ForeColor = System.Drawing.Color.White;
+            this.BOX_MADK.Location = new System.Drawing.Point(356, 77);
+            this.BOX_MADK.Name = "BOX_MADK";
+            this.BOX_MADK.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MADK.TabIndex = 25;
+            this.BOX_MADK.Text = "01";
+            this.BOX_MADK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_SLDK
+            // 
+            this.BOX_SLDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_SLDK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_SLDK.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_SLDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_SLDK.ForeColor = System.Drawing.Color.White;
+            this.BOX_SLDK.Location = new System.Drawing.Point(356, 130);
+            this.BOX_SLDK.Name = "BOX_SLDK";
+            this.BOX_SLDK.Size = new System.Drawing.Size(91, 19);
+            this.BOX_SLDK.TabIndex = 26;
+            this.BOX_SLDK.Text = "01";
+            this.BOX_SLDK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // BOX_DKPT
+            // 
+            this.BOX_DKPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_DKPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_DKPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_DKPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_DKPT.ForeColor = System.Drawing.Color.White;
+            this.BOX_DKPT.Location = new System.Drawing.Point(356, 173);
+            this.BOX_DKPT.Name = "BOX_DKPT";
+            this.BOX_DKPT.Size = new System.Drawing.Size(91, 19);
+            this.BOX_DKPT.TabIndex = 25;
+            this.BOX_DKPT.Text = "01";
+            this.BOX_DKPT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MANAGE_KHACHHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,9 +639,9 @@
             this.ClientSize = new System.Drawing.Size(1071, 843);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.btnDeSelect);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.DELETE);
+            this.Controls.Add(this.FIX);
+            this.Controls.Add(this.ADD);
             this.Controls.Add(this.dtvNH_PT);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -653,20 +671,15 @@
         private System.Windows.Forms.DataGridView dtvNH_PT;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lbPT;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbSL;
-        private System.Windows.Forms.Label lbMAPT;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lbTENLOAI;
-        private System.Windows.Forms.Label lbMALOAI;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
@@ -676,21 +689,26 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lbTENKH;
-        private System.Windows.Forms.Label lbMAKH;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label lbDC;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label lbCMND;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnDeSelect;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button DELETE;
+        private System.Windows.Forms.Button FIX;
+        private System.Windows.Forms.Button ADD;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox BOX_DKPT;
+        private System.Windows.Forms.TextBox BOX_SLDK;
+        private System.Windows.Forms.TextBox BOX_MADK;
+        private System.Windows.Forms.TextBox BOX_TENLOAI;
+        private System.Windows.Forms.TextBox BOX_MALOAI;
+        private System.Windows.Forms.TextBox BOX_DIACHI;
+        private System.Windows.Forms.TextBox BOX_CMND;
+        private System.Windows.Forms.TextBox BOX_TENKH;
+        private System.Windows.Forms.TextBox BOX_MAKH;
     }
 }

@@ -37,9 +37,9 @@
             this.dtvDK = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
-            this.lbMANH_DK = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.BOX_MADK = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvNH_DK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvDK)).BeginInit();
             this.panel15.SuspendLayout();
@@ -185,18 +185,6 @@
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = true;
             // 
-            // lbMANH_DK
-            // 
-            this.lbMANH_DK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbMANH_DK.AutoSize = true;
-            this.lbMANH_DK.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMANH_DK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(198)))), ((int)(((byte)(205)))));
-            this.lbMANH_DK.Location = new System.Drawing.Point(467, 79);
-            this.lbMANH_DK.Name = "lbMANH_DK";
-            this.lbMANH_DK.Size = new System.Drawing.Size(22, 17);
-            this.lbMANH_DK.TabIndex = 1;
-            this.lbMANH_DK.Text = "02";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
@@ -208,14 +196,28 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.panel15.Controls.Add(this.BOX_MADK);
             this.panel15.Controls.Add(this.panel1);
-            this.panel15.Controls.Add(this.lbMANH_DK);
             this.panel15.Controls.Add(this.button11);
             this.panel15.Controls.Add(this.label24);
             this.panel15.Location = new System.Drawing.Point(193, 101);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(519, 286);
             this.panel15.TabIndex = 23;
+            // 
+            // BOX_MADK
+            // 
+            this.BOX_MADK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.BOX_MADK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX_MADK.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.BOX_MADK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOX_MADK.ForeColor = System.Drawing.Color.White;
+            this.BOX_MADK.Location = new System.Drawing.Point(409, 77);
+            this.BOX_MADK.Name = "BOX_MADK";
+            this.BOX_MADK.Size = new System.Drawing.Size(91, 19);
+            this.BOX_MADK.TabIndex = 23;
+            this.BOX_MADK.Text = "01";
+            this.BOX_MADK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // MANAGE_DKPT
             // 
@@ -253,8 +255,8 @@
         private System.Windows.Forms.DataGridView dtvDK;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label lbMANH_DK;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.TextBox BOX_MADK;
     }
 }
