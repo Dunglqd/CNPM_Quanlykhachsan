@@ -36,7 +36,7 @@ namespace Restaurant_Management
         private void resetLb()
         {
             lbMAKH.Text = string.Empty;
-            lbMANHOM.Text = string.Empty;
+            lbMANH_DK.Text = string.Empty;
             lbMANV.Text = string.Empty;
             lbMAPHONG.Text = string.Empty;
             lbMAPT.Text = string.Empty;
@@ -57,7 +57,7 @@ namespace Restaurant_Management
             }
 
             lbMAKH.Text = currentPTP.Cells["MAKH"].Value.ToString();
-            lbMANHOM.Text = currentPTP.Cells["MANHOM"].Value.ToString();
+            lbMANH_DK.Text = currentPTP.Cells["MANHOM"].Value.ToString();
             lbMANV.Text = currentPTP.Cells["MANV"].Value.ToString();
             lbMAPHONG.Text = currentPTP.Cells["MAPHONG"].Value.ToString();
             lbMAPT.Text = currentPTP.Cells["MAPT"].Value.ToString();

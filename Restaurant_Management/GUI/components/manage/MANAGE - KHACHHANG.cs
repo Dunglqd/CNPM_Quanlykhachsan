@@ -29,23 +29,23 @@ namespace Restaurant_Management
 
         private void resetLbKH()
         {
-            lbCMND.Text = String.Empty;
-            lbDC.Text = String.Empty;
-            lbMAKH.Text = String.Empty;
-            lbTENKH.Text = String.Empty;
+            BOX_CMND.Text = String.Empty;
+            BOX_DIACHI.Text = String.Empty;
+            BOX_MAKH.Text = String.Empty;
+            BOX_TENKH.Text = String.Empty;
         }
 
         private void resetLbLKH()
         {
-            lbMALOAI.Text = String.Empty;
-            lbTENLOAI.Text = String.Empty;
+            BOX_MALOAI.Text = String.Empty;
+            BOX_TENLOAI.Text = String.Empty;
         }
 
         private void resetLbPT()
         {
-            lbMAPT.Text = String.Empty;
-            lbSL.Text = String.Empty;
-            lbPT.Text = String.Empty;
+            BOX_MADK.Text = String.Empty;
+            BOX_SLDK.Text = String.Empty;
+            BOX_DKPT.Text = String.Empty;
         }
 
         private void resetLabel()
@@ -93,10 +93,10 @@ namespace Restaurant_Management
             UTILS.showColumn(ref dtvLKH, new string[] {"MALOAI", "TENLOAI"});
             dtvLKH.ClearSelection();
 
-            lbCMND.Text = currentKH.Cells["CMND"].Value.ToString();
-            lbDC.Text = currentKH.Cells["DIACHI"].Value.ToString();
-            lbMAKH.Text = currentKH.Cells["MAKH"].Value.ToString();
-            lbTENKH.Text = currentKH.Cells["TENKH"].Value.ToString();
+            BOX_CMND.Text = currentKH.Cells["CMND"].Value.ToString();
+            BOX_DIACHI.Text = currentKH.Cells["DIACHI"].Value.ToString();
+            BOX_MAKH.Text = currentKH.Cells["MAKH"].Value.ToString();
+            BOX_TENKH.Text = currentKH.Cells["TENKH"].Value.ToString();
         }
 
         private void dtvLKH_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -119,8 +119,8 @@ namespace Restaurant_Management
             UTILS.showColumn(ref dtvNH_PT, new string[] {"MADK_PT", "PHUTHU", "SL"});
             dtvNH_PT.ClearSelection();
 
-            lbMALOAI.Text = currentL_KH.Cells["MALOAI"].Value.ToString();
-            lbTENLOAI.Text = currentL_KH.Cells["TENLOAI"].Value.ToString();
+            BOX_MALOAI.Text = currentL_KH.Cells["MALOAI"].Value.ToString();
+            BOX_TENLOAI.Text = currentL_KH.Cells["TENLOAI"].Value.ToString();
         }
 
         private void dtvNH_PT_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -135,9 +135,9 @@ namespace Restaurant_Management
                 return;
             }
 
-            lbMAPT.Text = currentPT.Cells["MADK_PT"].Value.ToString();
-            lbSL.Text = currentPT.Cells["SL"].Value.ToString();
-            lbPT.Text = currentPT.Cells["PHUTHU"].Value.ToString();
+            BOX_MADK.Text = currentPT.Cells["MADK_PT"].Value.ToString();
+            BOX_SLDK.Text = currentPT.Cells["SL"].Value.ToString();
+            BOX_DKPT.Text = currentPT.Cells["PHUTHU"].Value.ToString();
 
         }
     }

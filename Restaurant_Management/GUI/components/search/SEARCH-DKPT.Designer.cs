@@ -145,7 +145,6 @@
             this.boxMANV.TabIndex = 16;
             this.boxMANV.Text = "01";
             this.boxMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.boxMANV.TextChanged += new System.EventHandler(this.boxMANV_TextChanged);
             // 
             // panel4
             // 

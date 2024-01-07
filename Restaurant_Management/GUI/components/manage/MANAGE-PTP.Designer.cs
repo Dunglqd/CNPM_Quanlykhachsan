@@ -51,13 +51,13 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.BOX_MAPHIEUTHUE = new System.Windows.Forms.TextBox();
-            this.BOX_MANHOM = new System.Windows.Forms.TextBox();
-            this.BOX_MAPHONG = new System.Windows.Forms.TextBox();
-            this.BOX_NGAYDAT = new System.Windows.Forms.TextBox();
-            this.BOX_TYLE = new System.Windows.Forms.TextBox();
-            this.BOX_MANHANVIEN = new System.Windows.Forms.TextBox();
-            this.BOX_MAKHACHHANG = new System.Windows.Forms.TextBox();
+            this.lbMAKH = new System.Windows.Forms.TextBox();
+            this.lbMANV = new System.Windows.Forms.TextBox();
+            this.lbTYLE = new System.Windows.Forms.TextBox();
+            this.lbNGBD = new System.Windows.Forms.TextBox();
+            this.lbMAPHONG = new System.Windows.Forms.TextBox();
+            this.lbMANH_DK = new System.Windows.Forms.TextBox();
+            this.lbMAPT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPTP)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
@@ -339,13 +339,13 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel15.Controls.Add(this.BOX_MAKHACHHANG);
-            this.panel15.Controls.Add(this.BOX_MANHANVIEN);
-            this.panel15.Controls.Add(this.BOX_TYLE);
-            this.panel15.Controls.Add(this.BOX_NGAYDAT);
-            this.panel15.Controls.Add(this.BOX_MAPHONG);
-            this.panel15.Controls.Add(this.BOX_MANHOM);
-            this.panel15.Controls.Add(this.BOX_MAPHIEUTHUE);
+            this.panel15.Controls.Add(this.lbMAKH);
+            this.panel15.Controls.Add(this.lbMANV);
+            this.panel15.Controls.Add(this.lbTYLE);
+            this.panel15.Controls.Add(this.lbNGBD);
+            this.panel15.Controls.Add(this.lbMAPHONG);
+            this.panel15.Controls.Add(this.lbMANH_DK);
+            this.panel15.Controls.Add(this.lbMAPT);
             this.panel15.Controls.Add(this.panel8);
             this.panel15.Controls.Add(this.panel7);
             this.panel15.Controls.Add(this.panel5);
@@ -366,103 +366,103 @@
             this.panel15.Size = new System.Drawing.Size(417, 467);
             this.panel15.TabIndex = 50;
             // 
-            // BOX_MAPHIEUTHUE
+            // lbMAKH
             // 
-            this.BOX_MAPHIEUTHUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MAPHIEUTHUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MAPHIEUTHUE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MAPHIEUTHUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MAPHIEUTHUE.ForeColor = System.Drawing.Color.White;
-            this.BOX_MAPHIEUTHUE.Location = new System.Drawing.Point(323, 77);
-            this.BOX_MAPHIEUTHUE.Name = "BOX_MAPHIEUTHUE";
-            this.BOX_MAPHIEUTHUE.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MAPHIEUTHUE.TabIndex = 23;
-            this.BOX_MAPHIEUTHUE.Text = "01";
-            this.BOX_MAPHIEUTHUE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbMAKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMAKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMAKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMAKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMAKH.ForeColor = System.Drawing.Color.White;
+            this.lbMAKH.Location = new System.Drawing.Point(323, 413);
+            this.lbMAKH.Name = "lbMAKH";
+            this.lbMAKH.Size = new System.Drawing.Size(91, 19);
+            this.lbMAKH.TabIndex = 29;
+            this.lbMAKH.Text = "01";
+            this.lbMAKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_MANHOM
+            // lbMANV
             // 
-            this.BOX_MANHOM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MANHOM.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MANHOM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MANHOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MANHOM.ForeColor = System.Drawing.Color.White;
-            this.BOX_MANHOM.Location = new System.Drawing.Point(323, 130);
-            this.BOX_MANHOM.Name = "BOX_MANHOM";
-            this.BOX_MANHOM.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MANHOM.TabIndex = 24;
-            this.BOX_MANHOM.Text = "01";
-            this.BOX_MANHOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbMANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMANV.ForeColor = System.Drawing.Color.White;
+            this.lbMANV.Location = new System.Drawing.Point(326, 357);
+            this.lbMANV.Name = "lbMANV";
+            this.lbMANV.Size = new System.Drawing.Size(91, 19);
+            this.lbMANV.TabIndex = 28;
+            this.lbMANV.Text = "01";
+            this.lbMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_MAPHONG
+            // lbTYLE
             // 
-            this.BOX_MAPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MAPHONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MAPHONG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MAPHONG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MAPHONG.ForeColor = System.Drawing.Color.White;
-            this.BOX_MAPHONG.Location = new System.Drawing.Point(323, 178);
-            this.BOX_MAPHONG.Name = "BOX_MAPHONG";
-            this.BOX_MAPHONG.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MAPHONG.TabIndex = 25;
-            this.BOX_MAPHONG.Text = "01";
-            this.BOX_MAPHONG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbTYLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbTYLE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbTYLE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbTYLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTYLE.ForeColor = System.Drawing.Color.White;
+            this.lbTYLE.Location = new System.Drawing.Point(323, 296);
+            this.lbTYLE.Name = "lbTYLE";
+            this.lbTYLE.Size = new System.Drawing.Size(91, 19);
+            this.lbTYLE.TabIndex = 27;
+            this.lbTYLE.Text = "01";
+            this.lbTYLE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_NGAYDAT
+            // lbNGBD
             // 
-            this.BOX_NGAYDAT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_NGAYDAT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_NGAYDAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_NGAYDAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_NGAYDAT.ForeColor = System.Drawing.Color.White;
-            this.BOX_NGAYDAT.Location = new System.Drawing.Point(323, 238);
-            this.BOX_NGAYDAT.Name = "BOX_NGAYDAT";
-            this.BOX_NGAYDAT.Size = new System.Drawing.Size(91, 19);
-            this.BOX_NGAYDAT.TabIndex = 26;
-            this.BOX_NGAYDAT.Text = "01";
-            this.BOX_NGAYDAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbNGBD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbNGBD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbNGBD.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbNGBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNGBD.ForeColor = System.Drawing.Color.White;
+            this.lbNGBD.Location = new System.Drawing.Point(323, 238);
+            this.lbNGBD.Name = "lbNGBD";
+            this.lbNGBD.Size = new System.Drawing.Size(91, 19);
+            this.lbNGBD.TabIndex = 26;
+            this.lbNGBD.Text = "01";
+            this.lbNGBD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_TYLE
+            // lbMAPHONG
             // 
-            this.BOX_TYLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_TYLE.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_TYLE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_TYLE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_TYLE.ForeColor = System.Drawing.Color.White;
-            this.BOX_TYLE.Location = new System.Drawing.Point(323, 296);
-            this.BOX_TYLE.Name = "BOX_TYLE";
-            this.BOX_TYLE.Size = new System.Drawing.Size(91, 19);
-            this.BOX_TYLE.TabIndex = 27;
-            this.BOX_TYLE.Text = "01";
-            this.BOX_TYLE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbMAPHONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMAPHONG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMAPHONG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMAPHONG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMAPHONG.ForeColor = System.Drawing.Color.White;
+            this.lbMAPHONG.Location = new System.Drawing.Point(323, 178);
+            this.lbMAPHONG.Name = "lbMAPHONG";
+            this.lbMAPHONG.Size = new System.Drawing.Size(91, 19);
+            this.lbMAPHONG.TabIndex = 25;
+            this.lbMAPHONG.Text = "01";
+            this.lbMAPHONG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_MANHANVIEN
+            // lbMANH_DK
             // 
-            this.BOX_MANHANVIEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MANHANVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MANHANVIEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MANHANVIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MANHANVIEN.ForeColor = System.Drawing.Color.White;
-            this.BOX_MANHANVIEN.Location = new System.Drawing.Point(326, 357);
-            this.BOX_MANHANVIEN.Name = "BOX_MANHANVIEN";
-            this.BOX_MANHANVIEN.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MANHANVIEN.TabIndex = 28;
-            this.BOX_MANHANVIEN.Text = "01";
-            this.BOX_MANHANVIEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbMANH_DK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMANH_DK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMANH_DK.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMANH_DK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMANH_DK.ForeColor = System.Drawing.Color.White;
+            this.lbMANH_DK.Location = new System.Drawing.Point(323, 130);
+            this.lbMANH_DK.Name = "lbMANH_DK";
+            this.lbMANH_DK.Size = new System.Drawing.Size(91, 19);
+            this.lbMANH_DK.TabIndex = 24;
+            this.lbMANH_DK.Text = "01";
+            this.lbMANH_DK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // BOX_MAKHACHHANG
+            // lbMAPT
             // 
-            this.BOX_MAKHACHHANG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MAKHACHHANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MAKHACHHANG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MAKHACHHANG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MAKHACHHANG.ForeColor = System.Drawing.Color.White;
-            this.BOX_MAKHACHHANG.Location = new System.Drawing.Point(323, 413);
-            this.BOX_MAKHACHHANG.Name = "BOX_MAKHACHHANG";
-            this.BOX_MAKHACHHANG.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MAKHACHHANG.TabIndex = 29;
-            this.BOX_MAKHACHHANG.Text = "01";
-            this.BOX_MAKHACHHANG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lbMAPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMAPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMAPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMAPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMAPT.ForeColor = System.Drawing.Color.White;
+            this.lbMAPT.Location = new System.Drawing.Point(323, 77);
+            this.lbMAPT.Name = "lbMAPT";
+            this.lbMAPT.Size = new System.Drawing.Size(91, 19);
+            this.lbMAPT.TabIndex = 23;
+            this.lbMAPT.Text = "01";
+            this.lbMAPT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // MANAGE_PTP
             // 
@@ -514,12 +514,12 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox BOX_MAKHACHHANG;
-        private System.Windows.Forms.TextBox BOX_MANHANVIEN;
-        private System.Windows.Forms.TextBox BOX_TYLE;
-        private System.Windows.Forms.TextBox BOX_NGAYDAT;
-        private System.Windows.Forms.TextBox BOX_MAPHONG;
-        private System.Windows.Forms.TextBox BOX_MANHOM;
-        private System.Windows.Forms.TextBox BOX_MAPHIEUTHUE;
+        private System.Windows.Forms.TextBox lbMAKH;
+        private System.Windows.Forms.TextBox lbMANV;
+        private System.Windows.Forms.TextBox lbTYLE;
+        private System.Windows.Forms.TextBox lbNGBD;
+        private System.Windows.Forms.TextBox lbMAPHONG;
+        private System.Windows.Forms.TextBox lbMANH_DK;
+        private System.Windows.Forms.TextBox lbMAPT;
     }
 }

@@ -35,6 +35,10 @@
             this.dtvQUYEN = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.lbMA_QUYEN = new System.Windows.Forms.TextBox();
+            this.lbMANV = new System.Windows.Forms.TextBox();
+            this.lbPASSWORD = new System.Windows.Forms.TextBox();
+            this.lbUSERNAME = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,10 +49,6 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
-            this.BOX_USERNAME = new System.Windows.Forms.TextBox();
-            this.BOX_PASSWORD = new System.Windows.Forms.TextBox();
-            this.BOX_MANV = new System.Windows.Forms.TextBox();
-            this.BOX_MAQUYEN = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvQUYEN)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
@@ -144,10 +144,10 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel15.Controls.Add(this.BOX_MAQUYEN);
-            this.panel15.Controls.Add(this.BOX_MANV);
-            this.panel15.Controls.Add(this.BOX_PASSWORD);
-            this.panel15.Controls.Add(this.BOX_USERNAME);
+            this.panel15.Controls.Add(this.lbMA_QUYEN);
+            this.panel15.Controls.Add(this.lbMANV);
+            this.panel15.Controls.Add(this.lbPASSWORD);
+            this.panel15.Controls.Add(this.lbUSERNAME);
             this.panel15.Controls.Add(this.panel4);
             this.panel15.Controls.Add(this.panel3);
             this.panel15.Controls.Add(this.panel2);
@@ -162,6 +162,62 @@
             this.panel15.Size = new System.Drawing.Size(351, 290);
             this.panel15.TabIndex = 61;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
+            // 
+            // lbMA_QUYEN
+            // 
+            this.lbMA_QUYEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMA_QUYEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMA_QUYEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMA_QUYEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMA_QUYEN.ForeColor = System.Drawing.Color.White;
+            this.lbMA_QUYEN.Location = new System.Drawing.Point(260, 221);
+            this.lbMA_QUYEN.Name = "lbMA_QUYEN";
+            this.lbMA_QUYEN.Size = new System.Drawing.Size(91, 19);
+            this.lbMA_QUYEN.TabIndex = 26;
+            this.lbMA_QUYEN.Text = "01";
+            this.lbMA_QUYEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbMANV
+            // 
+            this.lbMANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbMANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbMANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbMANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMANV.ForeColor = System.Drawing.Color.White;
+            this.lbMANV.Location = new System.Drawing.Point(260, 173);
+            this.lbMANV.Name = "lbMANV";
+            this.lbMANV.Size = new System.Drawing.Size(91, 19);
+            this.lbMANV.TabIndex = 25;
+            this.lbMANV.Text = "01";
+            this.lbMANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbPASSWORD
+            // 
+            this.lbPASSWORD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbPASSWORD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbPASSWORD.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbPASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPASSWORD.ForeColor = System.Drawing.Color.White;
+            this.lbPASSWORD.Location = new System.Drawing.Point(260, 125);
+            this.lbPASSWORD.Name = "lbPASSWORD";
+            this.lbPASSWORD.Size = new System.Drawing.Size(91, 19);
+            this.lbPASSWORD.TabIndex = 24;
+            this.lbPASSWORD.Text = "01";
+            this.lbPASSWORD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbUSERNAME
+            // 
+            this.lbUSERNAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbUSERNAME.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbUSERNAME.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbUSERNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUSERNAME.ForeColor = System.Drawing.Color.White;
+            this.lbUSERNAME.Location = new System.Drawing.Point(260, 77);
+            this.lbUSERNAME.Name = "lbUSERNAME";
+            this.lbUSERNAME.Size = new System.Drawing.Size(91, 19);
+            this.lbUSERNAME.TabIndex = 23;
+            this.lbUSERNAME.Text = "01";
+            this.lbUSERNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel4
             // 
@@ -276,62 +332,6 @@
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // BOX_USERNAME
-            // 
-            this.BOX_USERNAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_USERNAME.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_USERNAME.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_USERNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_USERNAME.ForeColor = System.Drawing.Color.White;
-            this.BOX_USERNAME.Location = new System.Drawing.Point(260, 77);
-            this.BOX_USERNAME.Name = "BOX_USERNAME";
-            this.BOX_USERNAME.Size = new System.Drawing.Size(91, 19);
-            this.BOX_USERNAME.TabIndex = 23;
-            this.BOX_USERNAME.Text = "01";
-            this.BOX_USERNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // BOX_PASSWORD
-            // 
-            this.BOX_PASSWORD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_PASSWORD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_PASSWORD.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_PASSWORD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_PASSWORD.ForeColor = System.Drawing.Color.White;
-            this.BOX_PASSWORD.Location = new System.Drawing.Point(260, 125);
-            this.BOX_PASSWORD.Name = "BOX_PASSWORD";
-            this.BOX_PASSWORD.Size = new System.Drawing.Size(91, 19);
-            this.BOX_PASSWORD.TabIndex = 24;
-            this.BOX_PASSWORD.Text = "01";
-            this.BOX_PASSWORD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // BOX_MANV
-            // 
-            this.BOX_MANV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MANV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MANV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MANV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MANV.ForeColor = System.Drawing.Color.White;
-            this.BOX_MANV.Location = new System.Drawing.Point(260, 173);
-            this.BOX_MANV.Name = "BOX_MANV";
-            this.BOX_MANV.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MANV.TabIndex = 25;
-            this.BOX_MANV.Text = "01";
-            this.BOX_MANV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // BOX_MAQUYEN
-            // 
-            this.BOX_MAQUYEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.BOX_MAQUYEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BOX_MAQUYEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.BOX_MAQUYEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOX_MAQUYEN.ForeColor = System.Drawing.Color.White;
-            this.BOX_MAQUYEN.Location = new System.Drawing.Point(260, 221);
-            this.BOX_MAQUYEN.Name = "BOX_MAQUYEN";
-            this.BOX_MAQUYEN.Size = new System.Drawing.Size(91, 19);
-            this.BOX_MAQUYEN.TabIndex = 26;
-            this.BOX_MAQUYEN.Text = "01";
-            this.BOX_MAQUYEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // MANAGE_QUYEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,9 +376,9 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox BOX_MAQUYEN;
-        private System.Windows.Forms.TextBox BOX_MANV;
-        private System.Windows.Forms.TextBox BOX_PASSWORD;
-        private System.Windows.Forms.TextBox BOX_USERNAME;
+        private System.Windows.Forms.TextBox lbMA_QUYEN;
+        private System.Windows.Forms.TextBox lbMANV;
+        private System.Windows.Forms.TextBox lbPASSWORD;
+        private System.Windows.Forms.TextBox lbUSERNAME;
     }
 }

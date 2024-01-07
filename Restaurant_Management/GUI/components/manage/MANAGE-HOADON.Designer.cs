@@ -31,6 +31,13 @@
             this.dtvHD = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.lbTT = new System.Windows.Forms.TextBox();
+            this.lbKT = new System.Windows.Forms.TextBox();
+            this.lbSN = new System.Windows.Forms.TextBox();
+            this.lbKH = new System.Windows.Forms.TextBox();
+            this.lbNV = new System.Windows.Forms.TextBox();
+            this.lbPT = new System.Windows.Forms.TextBox();
+            this.lbHD = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -51,13 +58,6 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.btnDeSelect = new System.Windows.Forms.Button();
-            this.MAHOADON = new System.Windows.Forms.TextBox();
-            this.MAPHUTHU = new System.Windows.Forms.TextBox();
-            this.MANHANVIEN = new System.Windows.Forms.TextBox();
-            this.MAKHACHHANG = new System.Windows.Forms.TextBox();
-            this.SONGAY = new System.Windows.Forms.TextBox();
-            this.NGAYKETTHUC = new System.Windows.Forms.TextBox();
-            this.THANHTIEN = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvHD)).BeginInit();
             this.panel15.SuspendLayout();
             this.SuspendLayout();
@@ -99,13 +99,13 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.panel15.Controls.Add(this.THANHTIEN);
-            this.panel15.Controls.Add(this.NGAYKETTHUC);
-            this.panel15.Controls.Add(this.SONGAY);
-            this.panel15.Controls.Add(this.MAKHACHHANG);
-            this.panel15.Controls.Add(this.MANHANVIEN);
-            this.panel15.Controls.Add(this.MAPHUTHU);
-            this.panel15.Controls.Add(this.MAHOADON);
+            this.panel15.Controls.Add(this.lbTT);
+            this.panel15.Controls.Add(this.lbKT);
+            this.panel15.Controls.Add(this.lbSN);
+            this.panel15.Controls.Add(this.lbKH);
+            this.panel15.Controls.Add(this.lbNV);
+            this.panel15.Controls.Add(this.lbPT);
+            this.panel15.Controls.Add(this.lbHD);
             this.panel15.Controls.Add(this.panel7);
             this.panel15.Controls.Add(this.button3);
             this.panel15.Controls.Add(this.panel6);
@@ -126,6 +126,104 @@
             this.panel15.Size = new System.Drawing.Size(351, 417);
             this.panel15.TabIndex = 50;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
+            // 
+            // lbTT
+            // 
+            this.lbTT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbTT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbTT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTT.ForeColor = System.Drawing.Color.White;
+            this.lbTT.Location = new System.Drawing.Point(257, 358);
+            this.lbTT.Name = "lbTT";
+            this.lbTT.Size = new System.Drawing.Size(91, 19);
+            this.lbTT.TabIndex = 28;
+            this.lbTT.Text = "01";
+            this.lbTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbKT
+            // 
+            this.lbKT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbKT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbKT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKT.ForeColor = System.Drawing.Color.White;
+            this.lbKT.Location = new System.Drawing.Point(257, 317);
+            this.lbKT.Name = "lbKT";
+            this.lbKT.Size = new System.Drawing.Size(91, 19);
+            this.lbKT.TabIndex = 27;
+            this.lbKT.Text = "01";
+            this.lbKT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbSN
+            // 
+            this.lbSN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbSN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbSN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSN.ForeColor = System.Drawing.Color.White;
+            this.lbSN.Location = new System.Drawing.Point(257, 271);
+            this.lbSN.Name = "lbSN";
+            this.lbSN.Size = new System.Drawing.Size(91, 19);
+            this.lbSN.TabIndex = 26;
+            this.lbSN.Text = "01";
+            this.lbSN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbKH
+            // 
+            this.lbKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKH.ForeColor = System.Drawing.Color.White;
+            this.lbKH.Location = new System.Drawing.Point(257, 221);
+            this.lbKH.Name = "lbKH";
+            this.lbKH.Size = new System.Drawing.Size(91, 19);
+            this.lbKH.TabIndex = 25;
+            this.lbKH.Text = "01";
+            this.lbKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbNV
+            // 
+            this.lbNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbNV.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNV.ForeColor = System.Drawing.Color.White;
+            this.lbNV.Location = new System.Drawing.Point(257, 173);
+            this.lbNV.Name = "lbNV";
+            this.lbNV.Size = new System.Drawing.Size(91, 19);
+            this.lbNV.TabIndex = 24;
+            this.lbNV.Text = "01";
+            this.lbNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbPT
+            // 
+            this.lbPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPT.ForeColor = System.Drawing.Color.White;
+            this.lbPT.Location = new System.Drawing.Point(257, 125);
+            this.lbPT.Name = "lbPT";
+            this.lbPT.Size = new System.Drawing.Size(91, 19);
+            this.lbPT.TabIndex = 23;
+            this.lbPT.Text = "01";
+            this.lbPT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbHD
+            // 
+            this.lbHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
+            this.lbHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbHD.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.lbHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHD.ForeColor = System.Drawing.Color.White;
+            this.lbHD.Location = new System.Drawing.Point(257, 77);
+            this.lbHD.Name = "lbHD";
+            this.lbHD.Size = new System.Drawing.Size(91, 19);
+            this.lbHD.TabIndex = 22;
+            this.lbHD.Text = "01";
+            this.lbHD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel7
             // 
@@ -360,104 +458,6 @@
             this.btnDeSelect.Text = "Bỏ chọn";
             this.btnDeSelect.UseVisualStyleBackColor = true;
             // 
-            // MAHOADON
-            // 
-            this.MAHOADON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.MAHOADON.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MAHOADON.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.MAHOADON.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MAHOADON.ForeColor = System.Drawing.Color.White;
-            this.MAHOADON.Location = new System.Drawing.Point(257, 77);
-            this.MAHOADON.Name = "MAHOADON";
-            this.MAHOADON.Size = new System.Drawing.Size(91, 19);
-            this.MAHOADON.TabIndex = 22;
-            this.MAHOADON.Text = "01";
-            this.MAHOADON.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // MAPHUTHU
-            // 
-            this.MAPHUTHU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.MAPHUTHU.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MAPHUTHU.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.MAPHUTHU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MAPHUTHU.ForeColor = System.Drawing.Color.White;
-            this.MAPHUTHU.Location = new System.Drawing.Point(257, 125);
-            this.MAPHUTHU.Name = "MAPHUTHU";
-            this.MAPHUTHU.Size = new System.Drawing.Size(91, 19);
-            this.MAPHUTHU.TabIndex = 23;
-            this.MAPHUTHU.Text = "01";
-            this.MAPHUTHU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // MANHANVIEN
-            // 
-            this.MANHANVIEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.MANHANVIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MANHANVIEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.MANHANVIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MANHANVIEN.ForeColor = System.Drawing.Color.White;
-            this.MANHANVIEN.Location = new System.Drawing.Point(257, 173);
-            this.MANHANVIEN.Name = "MANHANVIEN";
-            this.MANHANVIEN.Size = new System.Drawing.Size(91, 19);
-            this.MANHANVIEN.TabIndex = 24;
-            this.MANHANVIEN.Text = "01";
-            this.MANHANVIEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // MAKHACHHANG
-            // 
-            this.MAKHACHHANG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.MAKHACHHANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MAKHACHHANG.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.MAKHACHHANG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MAKHACHHANG.ForeColor = System.Drawing.Color.White;
-            this.MAKHACHHANG.Location = new System.Drawing.Point(257, 221);
-            this.MAKHACHHANG.Name = "MAKHACHHANG";
-            this.MAKHACHHANG.Size = new System.Drawing.Size(91, 19);
-            this.MAKHACHHANG.TabIndex = 25;
-            this.MAKHACHHANG.Text = "01";
-            this.MAKHACHHANG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // SONGAY
-            // 
-            this.SONGAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.SONGAY.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SONGAY.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.SONGAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SONGAY.ForeColor = System.Drawing.Color.White;
-            this.SONGAY.Location = new System.Drawing.Point(257, 271);
-            this.SONGAY.Name = "SONGAY";
-            this.SONGAY.Size = new System.Drawing.Size(91, 19);
-            this.SONGAY.TabIndex = 26;
-            this.SONGAY.Text = "01";
-            this.SONGAY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // NGAYKETTHUC
-            // 
-            this.NGAYKETTHUC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.NGAYKETTHUC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NGAYKETTHUC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.NGAYKETTHUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NGAYKETTHUC.ForeColor = System.Drawing.Color.White;
-            this.NGAYKETTHUC.Location = new System.Drawing.Point(257, 317);
-            this.NGAYKETTHUC.Name = "NGAYKETTHUC";
-            this.NGAYKETTHUC.Size = new System.Drawing.Size(91, 19);
-            this.NGAYKETTHUC.TabIndex = 27;
-            this.NGAYKETTHUC.Text = "01";
-            this.NGAYKETTHUC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // THANHTIEN
-            // 
-            this.THANHTIEN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.THANHTIEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.THANHTIEN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.THANHTIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.THANHTIEN.ForeColor = System.Drawing.Color.White;
-            this.THANHTIEN.Location = new System.Drawing.Point(257, 358);
-            this.THANHTIEN.Name = "THANHTIEN";
-            this.THANHTIEN.Size = new System.Drawing.Size(91, 19);
-            this.THANHTIEN.TabIndex = 28;
-            this.THANHTIEN.Text = "01";
-            this.THANHTIEN.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // MANAGE_HOADON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,12 +508,12 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button btnDeSelect;
-        private System.Windows.Forms.TextBox THANHTIEN;
-        private System.Windows.Forms.TextBox NGAYKETTHUC;
-        private System.Windows.Forms.TextBox SONGAY;
-        private System.Windows.Forms.TextBox MAKHACHHANG;
-        private System.Windows.Forms.TextBox MANHANVIEN;
-        private System.Windows.Forms.TextBox MAPHUTHU;
-        private System.Windows.Forms.TextBox MAHOADON;
+        private System.Windows.Forms.TextBox lbTT;
+        private System.Windows.Forms.TextBox lbKT;
+        private System.Windows.Forms.TextBox lbSN;
+        private System.Windows.Forms.TextBox lbKH;
+        private System.Windows.Forms.TextBox lbNV;
+        private System.Windows.Forms.TextBox lbPT;
+        private System.Windows.Forms.TextBox lbHD;
     }
 }
